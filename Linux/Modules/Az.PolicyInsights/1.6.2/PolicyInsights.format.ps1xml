@@ -1,0 +1,912 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Configuration>
+  <ViewDefinitions>
+	  <View>
+      <Name>Microsoft.Azure.Commands.PolicyInsights.Models.PolicyEvent</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.Commands.PolicyInsights.Models.PolicyEvent</TypeName>
+      </ViewSelectedBy>
+      <ListControl>
+        <ListEntries>
+          <ListEntry>
+            <ListItems>
+              <ListItem>
+                <PropertyName>Timestamp</PropertyName>
+                <ItemSelectionCondition>
+                  <ScriptBlock>
+                    $_.Timestamp -ne $null
+                  </ScriptBlock>
+                </ItemSelectionCondition>                
+              </ListItem>
+              <ListItem>
+                <PropertyName>ResourceId</PropertyName>
+                <ItemSelectionCondition>
+                  <ScriptBlock>
+                    $_.ResourceId -ne $null -and $_.ResourceId -ne &quot;&quot;
+                  </ScriptBlock>
+                </ItemSelectionCondition>
+              </ListItem>
+              <ListItem>
+                <PropertyName>PolicyAssignmentId</PropertyName>
+                <ItemSelectionCondition>
+                  <ScriptBlock>
+                    $_.PolicyAssignmentId -ne $null -and $_.PolicyAssignmentId -ne &quot;&quot;
+                  </ScriptBlock>
+                </ItemSelectionCondition>
+              </ListItem>
+              <ListItem>
+                <PropertyName>PolicyDefinitionId</PropertyName>
+                <ItemSelectionCondition>
+                  <ScriptBlock>
+                    $_.PolicyDefinitionId -ne $null -and $_.PolicyDefinitionId -ne &quot;&quot;
+                  </ScriptBlock>
+                </ItemSelectionCondition>
+              </ListItem>
+              <ListItem>
+                <PropertyName>EffectiveParameters</PropertyName>
+                <ItemSelectionCondition>
+                  <ScriptBlock>
+                    $_.EffectiveParameters -ne $null -and $_.EffectiveParameters -ne &quot;&quot;
+                  </ScriptBlock>
+                </ItemSelectionCondition>
+              </ListItem>
+              <ListItem>
+                <PropertyName>IsCompliant</PropertyName>
+                <ItemSelectionCondition>
+                  <ScriptBlock>
+                    $_.IsCompliant -ne $null
+                  </ScriptBlock>
+                </ItemSelectionCondition>
+              </ListItem>
+              <ListItem>
+                <PropertyName>SubscriptionId</PropertyName>
+                <ItemSelectionCondition>
+                  <ScriptBlock>
+                    $_.SubscriptionId -ne $null -and $_.SubscriptionId -ne &quot;&quot;
+                  </ScriptBlock>
+                </ItemSelectionCondition>
+              </ListItem>
+              <ListItem>
+                <PropertyName>ResourceType</PropertyName>
+                <ItemSelectionCondition>
+                  <ScriptBlock>
+                    $_.ResourceType -ne $null -and $_.ResourceType -ne &quot;&quot;
+                  </ScriptBlock>
+                </ItemSelectionCondition>
+              </ListItem>
+              <ListItem>
+                <PropertyName>ResourceLocation</PropertyName>
+                <ItemSelectionCondition>
+                  <ScriptBlock>
+                    $_.ResourceLocation -ne $null -and $_.ResourceLocation -ne &quot;&quot;
+                  </ScriptBlock>
+                </ItemSelectionCondition>
+              </ListItem>
+              <ListItem>
+                <PropertyName>ResourceGroup</PropertyName>
+                <ItemSelectionCondition>
+                  <ScriptBlock>
+                    $_.ResourceGroup -ne $null -and $_.ResourceGroup -ne &quot;&quot;
+                  </ScriptBlock>
+                </ItemSelectionCondition>
+              </ListItem>
+              <ListItem>
+                <PropertyName>ResourceTags</PropertyName>
+                <ItemSelectionCondition>
+                  <ScriptBlock>
+                    $_.ResourceTags -ne $null -and $_.ResourceTags -ne &quot;&quot;
+                  </ScriptBlock>
+                </ItemSelectionCondition>
+              </ListItem>
+              <ListItem>
+                <PropertyName>PolicyAssignmentName</PropertyName>
+                <ItemSelectionCondition>
+                  <ScriptBlock>
+                    $_.PolicyAssignmentName -ne $null -and $_.PolicyAssignmentName -ne &quot;&quot;
+                  </ScriptBlock>
+                </ItemSelectionCondition>                
+              </ListItem>
+              <ListItem>
+                <PropertyName>PolicyAssignmentOwner</PropertyName>
+                <ItemSelectionCondition>
+                  <ScriptBlock>
+                    $_.PolicyAssignmentOwner -ne $null -and $_.PolicyAssignmentOwner -ne &quot;&quot;
+                  </ScriptBlock>
+                </ItemSelectionCondition>
+              </ListItem>
+              <ListItem>
+                <PropertyName>PolicyAssignmentParameters</PropertyName>
+                <ItemSelectionCondition>
+                  <ScriptBlock>
+                    $_.PolicyAssignmentParameters -ne $null -and $_.PolicyAssignmentParameters -ne &quot;&quot;
+                  </ScriptBlock>
+                </ItemSelectionCondition>
+              </ListItem>
+              <ListItem>
+                <PropertyName>PolicyAssignmentScope</PropertyName>
+                <ItemSelectionCondition>
+                  <ScriptBlock>
+                    $_.PolicyAssignmentScope -ne $null -and $_.PolicyAssignmentScope -ne &quot;&quot;
+                  </ScriptBlock>
+                </ItemSelectionCondition>
+              </ListItem>
+              <ListItem>
+                <PropertyName>PolicyDefinitionName</PropertyName>
+                <ItemSelectionCondition>
+                  <ScriptBlock>
+                    $_.PolicyDefinitionName -ne $null -and $_.PolicyDefinitionName -ne &quot;&quot;
+                  </ScriptBlock>
+                </ItemSelectionCondition>
+              </ListItem>
+              <ListItem>
+                <PropertyName>PolicyDefinitionAction</PropertyName>
+                <ItemSelectionCondition>
+                  <ScriptBlock>
+                    $_.PolicyDefinitionAction -ne $null -and $_.PolicyDefinitionAction -ne &quot;&quot;
+                  </ScriptBlock>
+                </ItemSelectionCondition>                
+              </ListItem>
+              <ListItem>
+                <PropertyName>PolicyDefinitionCategory</PropertyName>
+                <ItemSelectionCondition>
+                  <ScriptBlock>
+                    $_.PolicyDefinitionCategory -ne $null -and $_.PolicyDefinitionCategory -ne &quot;&quot;
+                  </ScriptBlock>
+                </ItemSelectionCondition>
+              </ListItem>
+              <ListItem>
+                <PropertyName>PolicySetDefinitionId</PropertyName>
+                <ItemSelectionCondition>
+                  <ScriptBlock>
+                    $_.PolicySetDefinitionId -ne $null -and $_.PolicySetDefinitionId -ne &quot;&quot;
+                  </ScriptBlock>
+                </ItemSelectionCondition>
+              </ListItem>
+              <ListItem>
+                <PropertyName>PolicySetDefinitionName</PropertyName>
+                <ItemSelectionCondition>
+                  <ScriptBlock>
+                    $_.PolicySetDefinitionName -ne $null -and $_.PolicySetDefinitionName -ne &quot;&quot;
+                  </ScriptBlock>
+                </ItemSelectionCondition>
+              </ListItem>
+              <ListItem>
+                <PropertyName>PolicySetDefinitionOwner</PropertyName>
+                <ItemSelectionCondition>
+                  <ScriptBlock>
+                    $_.PolicySetDefinitionOwner -ne $null -and $_.PolicySetDefinitionOwner -ne &quot;&quot;
+                  </ScriptBlock>
+                </ItemSelectionCondition>
+              </ListItem>
+              <ListItem>
+                <PropertyName>PolicySetDefinitionCategory</PropertyName>
+                <ItemSelectionCondition>
+                  <ScriptBlock>
+                    $_.PolicySetDefinitionCategory -ne $null -and $_.PolicySetDefinitionCategory -ne &quot;&quot;
+                  </ScriptBlock>
+                </ItemSelectionCondition>
+              </ListItem>
+              <ListItem>
+                <PropertyName>PolicySetDefinitionParameters</PropertyName>
+                <ItemSelectionCondition>
+                  <ScriptBlock>
+                    $_.PolicySetDefinitionParameters -ne $null -and $_.PolicySetDefinitionParameters -ne &quot;&quot;
+                  </ScriptBlock>
+                </ItemSelectionCondition>
+              </ListItem>
+              <ListItem>
+                <PropertyName>ManagementGroupIds</PropertyName>
+                <ItemSelectionCondition>
+                  <ScriptBlock>
+                    $_.ManagementGroupIds -ne $null -and $_.ManagementGroupIds -ne &quot;&quot;
+                  </ScriptBlock>
+                </ItemSelectionCondition>
+              </ListItem>
+              <ListItem>
+                <PropertyName>PolicyDefinitionReferenceId</PropertyName>
+                <ItemSelectionCondition>
+                  <ScriptBlock>
+                    $_.PolicyDefinitionReferenceId -ne $null -and $_.PolicyDefinitionReferenceId -ne &quot;&quot;
+                  </ScriptBlock>
+                </ItemSelectionCondition>
+              </ListItem>
+              <ListItem>
+                <PropertyName>TenantId</PropertyName>
+                <ItemSelectionCondition>
+                  <ScriptBlock>
+                    $_.TenantId -ne $null -and $_.TenantId -ne &quot;&quot;
+                  </ScriptBlock>
+                </ItemSelectionCondition>
+              </ListItem>
+              <ListItem>
+                <PropertyName>PrincipalOid</PropertyName>
+                <ItemSelectionCondition>
+                  <ScriptBlock>
+                    $_.PrincipalOid -ne $null -and $_.PrincipalOid -ne &quot;&quot;
+                  </ScriptBlock>
+                </ItemSelectionCondition>
+              </ListItem>
+              <ListItem>
+                <PropertyName>AdditionalProperties</PropertyName>
+                <ItemSelectionCondition>
+                  <ScriptBlock>
+                    $_.AdditionalProperties -ne $null -and $_.AdditionalProperties.Count -ne 0
+                  </ScriptBlock>
+                </ItemSelectionCondition>
+              </ListItem>
+            </ListItems>
+          </ListEntry>
+        </ListEntries>
+      </ListControl>
+    </View>
+    <View>
+      <Name>Microsoft.Azure.Commands.PolicyInsights.Models.PolicyState</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.Commands.PolicyInsights.Models.PolicyState</TypeName>
+      </ViewSelectedBy>
+      <ListControl>
+        <ListEntries>
+          <ListEntry>
+            <ListItems>
+              <ListItem>
+                <PropertyName>Timestamp</PropertyName>
+                <ItemSelectionCondition>
+                  <ScriptBlock>
+                    $_.Timestamp -ne $null
+                  </ScriptBlock>
+                </ItemSelectionCondition>
+              </ListItem>
+              <ListItem>
+                <PropertyName>ResourceId</PropertyName>
+                <ItemSelectionCondition>
+                  <ScriptBlock>
+                    $_.ResourceId -ne $null -and $_.ResourceId -ne &quot;&quot;
+                  </ScriptBlock>
+                </ItemSelectionCondition>
+              </ListItem>
+              <ListItem>
+                <PropertyName>PolicyAssignmentId</PropertyName>
+                <ItemSelectionCondition>
+                  <ScriptBlock>
+                    $_.PolicyAssignmentId -ne $null -and $_.PolicyAssignmentId -ne &quot;&quot;
+                  </ScriptBlock>
+                </ItemSelectionCondition>
+              </ListItem>
+              <ListItem>
+                <PropertyName>PolicyDefinitionId</PropertyName>
+                <ItemSelectionCondition>
+                  <ScriptBlock>
+                    $_.PolicyDefinitionId -ne $null -and $_.PolicyDefinitionId -ne &quot;&quot;
+                  </ScriptBlock>
+                </ItemSelectionCondition>
+              </ListItem>
+              <ListItem>
+                <PropertyName>EffectiveParameters</PropertyName>
+                <ItemSelectionCondition>
+                  <ScriptBlock>
+                    $_.EffectiveParameters -ne $null -and $_.EffectiveParameters -ne &quot;&quot;
+                  </ScriptBlock>
+                </ItemSelectionCondition>
+              </ListItem>
+              <ListItem>
+                <PropertyName>IsCompliant</PropertyName>
+                <ItemSelectionCondition>
+                  <ScriptBlock>
+                    $_.IsCompliant -ne $null
+                  </ScriptBlock>
+                </ItemSelectionCondition>
+              </ListItem>
+              <ListItem>
+                <PropertyName>SubscriptionId</PropertyName>
+                <ItemSelectionCondition>
+                  <ScriptBlock>
+                    $_.SubscriptionId -ne $null -and $_.SubscriptionId -ne &quot;&quot;
+                  </ScriptBlock>
+                </ItemSelectionCondition>
+              </ListItem>
+              <ListItem>
+                <PropertyName>ResourceType</PropertyName>
+                <ItemSelectionCondition>
+                  <ScriptBlock>
+                    $_.ResourceType -ne $null -and $_.ResourceType -ne &quot;&quot;
+                  </ScriptBlock>
+                </ItemSelectionCondition>
+              </ListItem>
+              <ListItem>
+                <PropertyName>ResourceLocation</PropertyName>
+                <ItemSelectionCondition>
+                  <ScriptBlock>
+                    $_.ResourceLocation -ne $null -and $_.ResourceLocation -ne &quot;&quot;
+                  </ScriptBlock>
+                </ItemSelectionCondition>
+              </ListItem>
+              <ListItem>
+                <PropertyName>ResourceGroup</PropertyName>
+                <ItemSelectionCondition>
+                  <ScriptBlock>
+                    $_.ResourceGroup -ne $null -and $_.ResourceGroup -ne &quot;&quot;
+                  </ScriptBlock>
+                </ItemSelectionCondition>
+              </ListItem>
+              <ListItem>
+                <PropertyName>ResourceTags</PropertyName>
+                <ItemSelectionCondition>
+                  <ScriptBlock>
+                    $_.ResourceTags -ne $null -and $_.ResourceTags -ne &quot;&quot;
+                  </ScriptBlock>
+                </ItemSelectionCondition>
+              </ListItem>
+              <ListItem>
+                <PropertyName>PolicyAssignmentName</PropertyName>
+                <ItemSelectionCondition>
+                  <ScriptBlock>
+                    $_.PolicyAssignmentName -ne $null -and $_.PolicyAssignmentName -ne &quot;&quot;
+                  </ScriptBlock>
+                </ItemSelectionCondition>                
+              </ListItem>
+              <ListItem>
+                <PropertyName>PolicyAssignmentOwner</PropertyName>
+                <ItemSelectionCondition>
+                  <ScriptBlock>
+                    $_.PolicyAssignmentOwner -ne $null -and $_.PolicyAssignmentOwner -ne &quot;&quot;
+                  </ScriptBlock>
+                </ItemSelectionCondition>
+              </ListItem>
+              <ListItem>
+                <PropertyName>PolicyAssignmentParameters</PropertyName>
+                <ItemSelectionCondition>
+                  <ScriptBlock>
+                    $_.PolicyAssignmentParameters -ne $null -and $_.PolicyAssignmentParameters -ne &quot;&quot;
+                  </ScriptBlock>
+                </ItemSelectionCondition>
+              </ListItem>
+              <ListItem>
+                <PropertyName>PolicyAssignmentScope</PropertyName>
+                <ItemSelectionCondition>
+                  <ScriptBlock>
+                    $_.PolicyAssignmentScope -ne $null -and $_.PolicyAssignmentScope -ne &quot;&quot;
+                  </ScriptBlock>
+                </ItemSelectionCondition>
+              </ListItem>
+              <ListItem>
+                <PropertyName>PolicyDefinitionName</PropertyName>
+                <ItemSelectionCondition>
+                  <ScriptBlock>
+                    $_.PolicyDefinitionName -ne $null -and $_.PolicyDefinitionName -ne &quot;&quot;
+                  </ScriptBlock>
+                </ItemSelectionCondition>
+              </ListItem>
+              <ListItem>
+                <PropertyName>PolicyDefinitionAction</PropertyName>
+                <ItemSelectionCondition>
+                  <ScriptBlock>
+                    $_.PolicyDefinitionAction -ne $null -and $_.PolicyDefinitionAction -ne &quot;&quot;
+                  </ScriptBlock>
+                </ItemSelectionCondition>
+              </ListItem>
+              <ListItem>
+                <PropertyName>PolicyDefinitionCategory</PropertyName>
+                <ItemSelectionCondition>
+                  <ScriptBlock>
+                    $_.PolicyDefinitionCategory -ne $null -and $_.PolicyDefinitionCategory -ne &quot;&quot;
+                  </ScriptBlock>
+                </ItemSelectionCondition>
+              </ListItem>
+              <ListItem>
+                <PropertyName>PolicySetDefinitionId</PropertyName>
+                <ItemSelectionCondition>
+                  <ScriptBlock>
+                    $_.PolicySetDefinitionId -ne $null -and $_.PolicySetDefinitionId -ne &quot;&quot;
+                  </ScriptBlock>
+                </ItemSelectionCondition>                
+              </ListItem>
+              <ListItem>
+                <PropertyName>PolicySetDefinitionName</PropertyName>
+                <ItemSelectionCondition>
+                  <ScriptBlock>
+                    $_.PolicySetDefinitionName -ne $null -and $_.PolicySetDefinitionName -ne &quot;&quot;
+                  </ScriptBlock>
+                </ItemSelectionCondition>
+              </ListItem>
+              <ListItem>
+                <PropertyName>PolicySetDefinitionOwner</PropertyName>
+                <ItemSelectionCondition>
+                  <ScriptBlock>
+                    $_.PolicySetDefinitionOwner -ne $null -and $_.PolicySetDefinitionOwner -ne &quot;&quot;
+                  </ScriptBlock>
+                </ItemSelectionCondition>
+              </ListItem>
+              <ListItem>
+                <PropertyName>PolicySetDefinitionCategory</PropertyName>
+                <ItemSelectionCondition>
+                  <ScriptBlock>
+                    $_.PolicySetDefinitionCategory -ne $null -and $_.PolicySetDefinitionCategory -ne &quot;&quot;
+                  </ScriptBlock>
+                </ItemSelectionCondition>
+              </ListItem>
+              <ListItem>
+                <PropertyName>PolicySetDefinitionParameters</PropertyName>
+                <ItemSelectionCondition>
+                  <ScriptBlock>
+                    $_.PolicySetDefinitionParameters -ne $null -and $_.PolicySetDefinitionParameters -ne &quot;&quot;
+                  </ScriptBlock>
+                </ItemSelectionCondition>
+              </ListItem>
+              <ListItem>
+                <PropertyName>ManagementGroupIds</PropertyName>
+                <ItemSelectionCondition>
+                  <ScriptBlock>
+                    $_.ManagementGroupIds -ne $null -and $_.ManagementGroupIds -ne &quot;&quot;
+                  </ScriptBlock>
+                </ItemSelectionCondition>
+              </ListItem>
+              <ListItem>
+                <PropertyName>PolicyDefinitionReferenceId</PropertyName>
+                <ItemSelectionCondition>
+                  <ScriptBlock>
+                    $_.PolicyDefinitionReferenceId -ne $null -and $_.PolicyDefinitionReferenceId -ne &quot;&quot;
+                  </ScriptBlock>
+                </ItemSelectionCondition>
+              </ListItem>
+              <ListItem>
+                <PropertyName>ComplianceState</PropertyName>
+                <ItemSelectionCondition>
+                  <ScriptBlock>
+                    $_.ComplianceState -ne $null -and $_.ComplianceState -ne &quot;&quot;
+                  </ScriptBlock>
+                </ItemSelectionCondition>
+              </ListItem>
+              <ListItem>
+                <PropertyName>PolicyEvaluationDetails</PropertyName>
+                <ItemSelectionCondition>
+                  <ScriptBlock>
+                    $_.PolicyEvaluationDetails -ne $null -and $_.PolicyEvaluationDetails.Count -ne 0
+                  </ScriptBlock>
+                </ItemSelectionCondition>
+              </ListItem>
+              <ListItem>
+                <PropertyName>AdditionalProperties</PropertyName>
+                <ItemSelectionCondition>
+                  <ScriptBlock>
+                    $_.AdditionalProperties -ne $null -and $_.AdditionalProperties.Count -ne 0
+                  </ScriptBlock>
+                </ItemSelectionCondition>
+              </ListItem>
+            </ListItems>
+          </ListEntry>
+        </ListEntries>
+      </ListControl>
+    </View>
+    <View>
+      <Name>Microsoft.Azure.Commands.PolicyInsights.Models.PolicyEvaluationDetails</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.Commands.PolicyInsights.Models.PolicyEvaluationDetails</TypeName>
+      </ViewSelectedBy>
+      <ListControl>
+        <ListEntries>
+          <ListEntry>
+            <ListItems>
+              <ListItem>
+                <PropertyName>EvaluatedExpressions</PropertyName>
+                <ItemSelectionCondition>
+                  <ScriptBlock>
+                    $_.EvaluatedExpressions -ne $null -and $_.EvaluatedExpressions.Count -ne 0
+                  </ScriptBlock>
+                </ItemSelectionCondition>
+              </ListItem>
+              <ListItem>
+                <PropertyName>IfNotExistsDetails</PropertyName>
+                <ItemSelectionCondition>
+                  <ScriptBlock>
+                    $_.IfNotExistsDetails -ne $null
+                  </ScriptBlock>
+                </ItemSelectionCondition>
+              </ListItem>
+            </ListItems>
+          </ListEntry>
+        </ListEntries>
+      </ListControl>
+    </View>
+    <View>
+      <Name>Microsoft.Azure.Commands.PolicyInsights.Models.ExpressionEvaluationDetails</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.Commands.PolicyInsights.Models.ExpressionEvaluationDetails</TypeName>
+      </ViewSelectedBy>
+      <ListControl>
+        <ListEntries>
+          <ListEntry>
+            <ListItems>
+              <ListItem>
+                <PropertyName>Result</PropertyName>
+                <ItemSelectionCondition>
+                  <ScriptBlock>
+                    $_.Result -ne $null -and $_.Result -ne &quot;&quot;
+                  </ScriptBlock>
+                </ItemSelectionCondition>
+              </ListItem>
+              <ListItem>
+                <PropertyName>Expression</PropertyName>
+                <ItemSelectionCondition>
+                  <ScriptBlock>
+                    $_.Expression -ne $null -and $_.Expression -ne &quot;&quot;
+                  </ScriptBlock>
+                </ItemSelectionCondition>
+              </ListItem>
+              <ListItem>
+                <PropertyName>Path</PropertyName>
+                <ItemSelectionCondition>
+                  <ScriptBlock>
+                    $_.Path -ne $null -and $_.Path -ne &quot;&quot;
+                  </ScriptBlock>
+                </ItemSelectionCondition>
+              </ListItem>
+              <ListItem>
+                <PropertyName>ExpressionValue</PropertyName>
+                <ItemSelectionCondition>
+                  <ScriptBlock>
+                    $_.ExpressionValue -ne $null
+                  </ScriptBlock>
+                </ItemSelectionCondition>
+              </ListItem>
+              <ListItem>
+                <PropertyName>TargetValue</PropertyName>
+                <ItemSelectionCondition>
+                  <ScriptBlock>
+                    $_.TargetValue -ne $null
+                  </ScriptBlock>
+                </ItemSelectionCondition>
+              </ListItem>
+              <ListItem>
+                <PropertyName>Operator</PropertyName>
+                <ItemSelectionCondition>
+                  <ScriptBlock>
+                    $_.Operator -ne $null -and $_.Operator -ne &quot;&quot;
+                  </ScriptBlock>
+                </ItemSelectionCondition>
+              </ListItem>
+            </ListItems>
+          </ListEntry>
+        </ListEntries>
+      </ListControl>
+    </View>
+    <View>
+      <Name>Microsoft.Azure.Commands.PolicyInsights.Models.IfNotExistsEvaluationDetails</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.Commands.PolicyInsights.Models.IfNotExistsEvaluationDetails</TypeName>
+      </ViewSelectedBy>
+      <ListControl>
+        <ListEntries>
+          <ListEntry>
+            <ListItems>
+              <ListItem>
+                <PropertyName>ResourceId</PropertyName>
+                <ItemSelectionCondition>
+                  <ScriptBlock>
+                    $_.ResourceId -ne $null -and $_.ResourceId -ne &quot;&quot;
+                  </ScriptBlock>
+                </ItemSelectionCondition>
+              </ListItem>
+              <ListItem>
+                <PropertyName>TotalResources</PropertyName>
+                <ItemSelectionCondition>
+                  <ScriptBlock>
+                    $_.TotalResources -ne $null
+                  </ScriptBlock>
+                </ItemSelectionCondition>
+              </ListItem>
+            </ListItems>
+          </ListEntry>
+        </ListEntries>
+      </ListControl>
+    </View>
+    <View>
+      <Name>Microsoft.Azure.Commands.PolicyInsights.Models.PolicyStateSummary</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.Commands.PolicyInsights.Models.PolicyStateSummary</TypeName>
+      </ViewSelectedBy>
+      <ListControl>
+        <ListEntries>
+          <ListEntry>
+            <ListItems>
+              <ListItem>
+                <Label>NonCompliantResources</Label>
+                <ScriptBlock>$_.Results.NonCompliantResources</ScriptBlock>
+              </ListItem>
+              <ListItem>
+                <Label>NonCompliantPolicies</Label>
+                <ScriptBlock>$_.Results.NonCompliantPolicies</ScriptBlock>
+              </ListItem>
+              <ListItem>
+                <PropertyName>PolicyAssignments</PropertyName>
+                <ItemSelectionCondition>
+                  <ScriptBlock>
+                    $_.PolicyAssignments -ne $null -and $_.PolicyAssignments.Count -ne 0
+                  </ScriptBlock>
+                </ItemSelectionCondition>
+              </ListItem>
+            </ListItems>
+          </ListEntry>
+        </ListEntries>
+      </ListControl>
+    </View>
+    <View>
+      <Name>Microsoft.Azure.Commands.PolicyInsights.Models.PolicyAssignmentSummary</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.Commands.PolicyInsights.Models.PolicyAssignmentSummary</TypeName>
+      </ViewSelectedBy>
+      <ListControl>
+        <ListEntries>
+          <ListEntry>
+            <ListItems>
+              <ListItem>
+                <PropertyName>PolicyAssignmentId</PropertyName>
+              </ListItem>
+              <ListItem>
+                <PropertyName>PolicySetDefinitionId</PropertyName>
+                <ItemSelectionCondition>
+                  <ScriptBlock>
+                    $_.PolicySetDefinitionId -ne $null -and $_.PolicySetDefinitionId -ne &quot;&quot;
+                  </ScriptBlock>
+                </ItemSelectionCondition>
+              </ListItem>
+              <ListItem>
+                <Label>NonCompliantResources</Label>
+                <ScriptBlock>$_.Results.NonCompliantResources</ScriptBlock>
+              </ListItem>
+              <ListItem>
+                <Label>NonCompliantPolicies</Label>
+                <ScriptBlock>$_.Results.NonCompliantPolicies</ScriptBlock>
+              </ListItem>
+              <ListItem>
+                <PropertyName>PolicyDefinitions</PropertyName>
+              </ListItem>
+            </ListItems>
+          </ListEntry>
+        </ListEntries>
+      </ListControl>
+    </View>
+    <View>
+      <Name>Microsoft.Azure.Commands.PolicyInsights.Models.PolicyDefinitionSummary</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.Commands.PolicyInsights.Models.PolicyDefinitionSummary</TypeName>
+      </ViewSelectedBy>
+      <ListControl>
+        <ListEntries>
+          <ListEntry>
+            <ListItems>
+              <ListItem>
+                <PropertyName>PolicyDefinitionId</PropertyName>
+              </ListItem>
+              <ListItem>
+                <PropertyName>PolicyDefinitionReferenceId</PropertyName>
+              </ListItem>
+              <ListItem>
+                <PropertyName>Effect</PropertyName>
+              </ListItem>
+              <ListItem>
+                <Label>NonCompliantResources</Label>
+                <ScriptBlock>$_.Results.NonCompliantResources</ScriptBlock>
+              </ListItem>
+            </ListItems>
+          </ListEntry>
+        </ListEntries>
+      </ListControl>
+    </View>
+  </ViewDefinitions>
+</Configuration>
+
+<!-- SIG # Begin signature block -->
+<!-- MIInvgYJKoZIhvcNAQcCoIInrzCCJ6sCAQExDzANBglghkgBZQMEAgEFADB5Bgor -->
+<!-- BgEEAYI3AgEEoGswaTA0BgorBgEEAYI3AgEeMCYCAwEAAAQQH8w7YFlLCE63JNLG -->
+<!-- KX7zUQIBAAIBAAIBAAIBAAIBADAxMA0GCWCGSAFlAwQCAQUABCAKPvn1phmkYlDu -->
+<!-- g+dA8BN5BeF9/zpjuuREprW786lX5qCCDXYwggX0MIID3KADAgECAhMzAAADTrU8 -->
+<!-- esGEb+srAAAAAANOMA0GCSqGSIb3DQEBCwUAMH4xCzAJBgNVBAYTAlVTMRMwEQYD -->
+<!-- VQQIEwpXYXNoaW5ndG9uMRAwDgYDVQQHEwdSZWRtb25kMR4wHAYDVQQKExVNaWNy -->
+<!-- b3NvZnQgQ29ycG9yYXRpb24xKDAmBgNVBAMTH01pY3Jvc29mdCBDb2RlIFNpZ25p -->
+<!-- bmcgUENBIDIwMTEwHhcNMjMwMzE2MTg0MzI5WhcNMjQwMzE0MTg0MzI5WjB0MQsw -->
+<!-- CQYDVQQGEwJVUzETMBEGA1UECBMKV2FzaGluZ3RvbjEQMA4GA1UEBxMHUmVkbW9u -->
+<!-- ZDEeMBwGA1UEChMVTWljcm9zb2Z0IENvcnBvcmF0aW9uMR4wHAYDVQQDExVNaWNy -->
+<!-- b3NvZnQgQ29ycG9yYXRpb24wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIB -->
+<!-- AQDdCKiNI6IBFWuvJUmf6WdOJqZmIwYs5G7AJD5UbcL6tsC+EBPDbr36pFGo1bsU -->
+<!-- p53nRyFYnncoMg8FK0d8jLlw0lgexDDr7gicf2zOBFWqfv/nSLwzJFNP5W03DF/1 -->
+<!-- 1oZ12rSFqGlm+O46cRjTDFBpMRCZZGddZlRBjivby0eI1VgTD1TvAdfBYQe82fhm -->
+<!-- WQkYR/lWmAK+vW/1+bO7jHaxXTNCxLIBW07F8PBjUcwFxxyfbe2mHB4h1L4U0Ofa -->
+<!-- +HX/aREQ7SqYZz59sXM2ySOfvYyIjnqSO80NGBaz5DvzIG88J0+BNhOu2jl6Dfcq -->
+<!-- jYQs1H/PMSQIK6E7lXDXSpXzAgMBAAGjggFzMIIBbzAfBgNVHSUEGDAWBgorBgEE -->
+<!-- AYI3TAgBBggrBgEFBQcDAzAdBgNVHQ4EFgQUnMc7Zn/ukKBsBiWkwdNfsN5pdwAw -->
+<!-- RQYDVR0RBD4wPKQ6MDgxHjAcBgNVBAsTFU1pY3Jvc29mdCBDb3Jwb3JhdGlvbjEW -->
+<!-- MBQGA1UEBRMNMjMwMDEyKzUwMDUxNjAfBgNVHSMEGDAWgBRIbmTlUAXTgqoXNzci -->
+<!-- tW2oynUClTBUBgNVHR8ETTBLMEmgR6BFhkNodHRwOi8vd3d3Lm1pY3Jvc29mdC5j -->
+<!-- b20vcGtpb3BzL2NybC9NaWNDb2RTaWdQQ0EyMDExXzIwMTEtMDctMDguY3JsMGEG -->
+<!-- CCsGAQUFBwEBBFUwUzBRBggrBgEFBQcwAoZFaHR0cDovL3d3dy5taWNyb3NvZnQu -->
+<!-- Y29tL3BraW9wcy9jZXJ0cy9NaWNDb2RTaWdQQ0EyMDExXzIwMTEtMDctMDguY3J0 -->
+<!-- MAwGA1UdEwEB/wQCMAAwDQYJKoZIhvcNAQELBQADggIBAD21v9pHoLdBSNlFAjmk -->
+<!-- mx4XxOZAPsVxxXbDyQv1+kGDe9XpgBnT1lXnx7JDpFMKBwAyIwdInmvhK9pGBa31 -->
+<!-- TyeL3p7R2s0L8SABPPRJHAEk4NHpBXxHjm4TKjezAbSqqbgsy10Y7KApy+9UrKa2 -->
+<!-- kGmsuASsk95PVm5vem7OmTs42vm0BJUU+JPQLg8Y/sdj3TtSfLYYZAaJwTAIgi7d -->
+<!-- hzn5hatLo7Dhz+4T+MrFd+6LUa2U3zr97QwzDthx+RP9/RZnur4inzSQsG5DCVIM -->
+<!-- pA1l2NWEA3KAca0tI2l6hQNYsaKL1kefdfHCrPxEry8onJjyGGv9YKoLv6AOO7Oh -->
+<!-- JEmbQlz/xksYG2N/JSOJ+QqYpGTEuYFYVWain7He6jgb41JbpOGKDdE/b+V2q/gX -->
+<!-- UgFe2gdwTpCDsvh8SMRoq1/BNXcr7iTAU38Vgr83iVtPYmFhZOVM0ULp/kKTVoir -->
+<!-- IpP2KCxT4OekOctt8grYnhJ16QMjmMv5o53hjNFXOxigkQWYzUO+6w50g0FAeFa8 -->
+<!-- 5ugCCB6lXEk21FFB1FdIHpjSQf+LP/W2OV/HfhC3uTPgKbRtXo83TZYEudooyZ/A -->
+<!-- Vu08sibZ3MkGOJORLERNwKm2G7oqdOv4Qj8Z0JrGgMzj46NFKAxkLSpE5oHQYP1H -->
+<!-- tPx1lPfD7iNSbJsP6LiUHXH1MIIHejCCBWKgAwIBAgIKYQ6Q0gAAAAAAAzANBgkq -->
+<!-- hkiG9w0BAQsFADCBiDELMAkGA1UEBhMCVVMxEzARBgNVBAgTCldhc2hpbmd0b24x -->
+<!-- EDAOBgNVBAcTB1JlZG1vbmQxHjAcBgNVBAoTFU1pY3Jvc29mdCBDb3Jwb3JhdGlv -->
+<!-- bjEyMDAGA1UEAxMpTWljcm9zb2Z0IFJvb3QgQ2VydGlmaWNhdGUgQXV0aG9yaXR5 -->
+<!-- IDIwMTEwHhcNMTEwNzA4MjA1OTA5WhcNMjYwNzA4MjEwOTA5WjB+MQswCQYDVQQG -->
+<!-- EwJVUzETMBEGA1UECBMKV2FzaGluZ3RvbjEQMA4GA1UEBxMHUmVkbW9uZDEeMBwG -->
+<!-- A1UEChMVTWljcm9zb2Z0IENvcnBvcmF0aW9uMSgwJgYDVQQDEx9NaWNyb3NvZnQg -->
+<!-- Q29kZSBTaWduaW5nIFBDQSAyMDExMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIIC -->
+<!-- CgKCAgEAq/D6chAcLq3YbqqCEE00uvK2WCGfQhsqa+laUKq4BjgaBEm6f8MMHt03 -->
+<!-- a8YS2AvwOMKZBrDIOdUBFDFC04kNeWSHfpRgJGyvnkmc6Whe0t+bU7IKLMOv2akr -->
+<!-- rnoJr9eWWcpgGgXpZnboMlImEi/nqwhQz7NEt13YxC4Ddato88tt8zpcoRb0Rrrg -->
+<!-- OGSsbmQ1eKagYw8t00CT+OPeBw3VXHmlSSnnDb6gE3e+lD3v++MrWhAfTVYoonpy -->
+<!-- 4BI6t0le2O3tQ5GD2Xuye4Yb2T6xjF3oiU+EGvKhL1nkkDstrjNYxbc+/jLTswM9 -->
+<!-- sbKvkjh+0p2ALPVOVpEhNSXDOW5kf1O6nA+tGSOEy/S6A4aN91/w0FK/jJSHvMAh -->
+<!-- dCVfGCi2zCcoOCWYOUo2z3yxkq4cI6epZuxhH2rhKEmdX4jiJV3TIUs+UsS1Vz8k -->
+<!-- A/DRelsv1SPjcF0PUUZ3s/gA4bysAoJf28AVs70b1FVL5zmhD+kjSbwYuER8ReTB -->
+<!-- w3J64HLnJN+/RpnF78IcV9uDjexNSTCnq47f7Fufr/zdsGbiwZeBe+3W7UvnSSmn -->
+<!-- Eyimp31ngOaKYnhfsi+E11ecXL93KCjx7W3DKI8sj0A3T8HhhUSJxAlMxdSlQy90 -->
+<!-- lfdu+HggWCwTXWCVmj5PM4TasIgX3p5O9JawvEagbJjS4NaIjAsCAwEAAaOCAe0w -->
+<!-- ggHpMBAGCSsGAQQBgjcVAQQDAgEAMB0GA1UdDgQWBBRIbmTlUAXTgqoXNzcitW2o -->
+<!-- ynUClTAZBgkrBgEEAYI3FAIEDB4KAFMAdQBiAEMAQTALBgNVHQ8EBAMCAYYwDwYD -->
+<!-- VR0TAQH/BAUwAwEB/zAfBgNVHSMEGDAWgBRyLToCMZBDuRQFTuHqp8cx0SOJNDBa -->
+<!-- BgNVHR8EUzBRME+gTaBLhklodHRwOi8vY3JsLm1pY3Jvc29mdC5jb20vcGtpL2Ny -->
+<!-- bC9wcm9kdWN0cy9NaWNSb29DZXJBdXQyMDExXzIwMTFfMDNfMjIuY3JsMF4GCCsG -->
+<!-- AQUFBwEBBFIwUDBOBggrBgEFBQcwAoZCaHR0cDovL3d3dy5taWNyb3NvZnQuY29t -->
+<!-- L3BraS9jZXJ0cy9NaWNSb29DZXJBdXQyMDExXzIwMTFfMDNfMjIuY3J0MIGfBgNV -->
+<!-- HSAEgZcwgZQwgZEGCSsGAQQBgjcuAzCBgzA/BggrBgEFBQcCARYzaHR0cDovL3d3 -->
+<!-- dy5taWNyb3NvZnQuY29tL3BraW9wcy9kb2NzL3ByaW1hcnljcHMuaHRtMEAGCCsG -->
+<!-- AQUFBwICMDQeMiAdAEwAZQBnAGEAbABfAHAAbwBsAGkAYwB5AF8AcwB0AGEAdABl -->
+<!-- AG0AZQBuAHQALiAdMA0GCSqGSIb3DQEBCwUAA4ICAQBn8oalmOBUeRou09h0ZyKb -->
+<!-- C5YR4WOSmUKWfdJ5DJDBZV8uLD74w3LRbYP+vj/oCso7v0epo/Np22O/IjWll11l -->
+<!-- hJB9i0ZQVdgMknzSGksc8zxCi1LQsP1r4z4HLimb5j0bpdS1HXeUOeLpZMlEPXh6 -->
+<!-- I/MTfaaQdION9MsmAkYqwooQu6SpBQyb7Wj6aC6VoCo/KmtYSWMfCWluWpiW5IP0 -->
+<!-- wI/zRive/DvQvTXvbiWu5a8n7dDd8w6vmSiXmE0OPQvyCInWH8MyGOLwxS3OW560 -->
+<!-- STkKxgrCxq2u5bLZ2xWIUUVYODJxJxp/sfQn+N4sOiBpmLJZiWhub6e3dMNABQam -->
+<!-- ASooPoI/E01mC8CzTfXhj38cbxV9Rad25UAqZaPDXVJihsMdYzaXht/a8/jyFqGa -->
+<!-- J+HNpZfQ7l1jQeNbB5yHPgZ3BtEGsXUfFL5hYbXw3MYbBL7fQccOKO7eZS/sl/ah -->
+<!-- XJbYANahRr1Z85elCUtIEJmAH9AAKcWxm6U/RXceNcbSoqKfenoi+kiVH6v7RyOA -->
+<!-- 9Z74v2u3S5fi63V4GuzqN5l5GEv/1rMjaHXmr/r8i+sLgOppO6/8MO0ETI7f33Vt -->
+<!-- Y5E90Z1WTk+/gFcioXgRMiF670EKsT/7qMykXcGhiJtXcVZOSEXAQsmbdlsKgEhr -->
+<!-- /Xmfwb1tbWrJUnMTDXpQzTGCGZ4wghmaAgEBMIGVMH4xCzAJBgNVBAYTAlVTMRMw -->
+<!-- EQYDVQQIEwpXYXNoaW5ndG9uMRAwDgYDVQQHEwdSZWRtb25kMR4wHAYDVQQKExVN -->
+<!-- aWNyb3NvZnQgQ29ycG9yYXRpb24xKDAmBgNVBAMTH01pY3Jvc29mdCBDb2RlIFNp -->
+<!-- Z25pbmcgUENBIDIwMTECEzMAAANOtTx6wYRv6ysAAAAAA04wDQYJYIZIAWUDBAIB -->
+<!-- BQCgga4wGQYJKoZIhvcNAQkDMQwGCisGAQQBgjcCAQQwHAYKKwYBBAGCNwIBCzEO -->
+<!-- MAwGCisGAQQBgjcCARUwLwYJKoZIhvcNAQkEMSIEIFN0wcVLU8cokoSBKeVjuys9 -->
+<!-- n0v1mRh9Q6aWKNx/7FKIMEIGCisGAQQBgjcCAQwxNDAyoBSAEgBNAGkAYwByAG8A -->
+<!-- cwBvAGYAdKEagBhodHRwOi8vd3d3Lm1pY3Jvc29mdC5jb20wDQYJKoZIhvcNAQEB -->
+<!-- BQAEggEAnAnKvY6bfwHFYkdBVkLHa4aCO1qWExaHklmWrloxX9+wBSV1O2ry74pK -->
+<!-- 0LIehNhwoGBSgbcGFEupC2KgsSKpQwMp9FgYhFoq1T0t+CRnvVNCOsIKj0/HYO9g -->
+<!-- Fgs16GCYGSPxBNjt6uLW3gAGKeoI4o42fuOOQWgAn1sEBPdDnoVhQSPUc6X60o2B -->
+<!-- 3IUNZFSLSv2iVkaGZ9+7lsEvpY6ZtX+XhXmB3r4QKN+5FpTa+yT0icX9jLIE/7Kn -->
+<!-- 1zCnDOGbYLsk6c08HjS3Kh1L21QZh+tN5RHuDx24BupYGuK90wSjBr2HwCQKoFTu -->
+<!-- J02igg2e9kVLorHPGkOVKr7mF9/+uqGCFygwghckBgorBgEEAYI3AwMBMYIXFDCC -->
+<!-- FxAGCSqGSIb3DQEHAqCCFwEwghb9AgEDMQ8wDQYJYIZIAWUDBAIBBQAwggFYBgsq -->
+<!-- hkiG9w0BCRABBKCCAUcEggFDMIIBPwIBAQYKKwYBBAGEWQoDATAxMA0GCWCGSAFl -->
+<!-- AwQCAQUABCB3t61Q4jE83Ax75mtegjCzzbi5uFVqPH5JJLQDP85VpAIGZLg+f9Ff -->
+<!-- GBIyMDIzMDcyNjA5MjIxOS43OFowBIACAfSggdikgdUwgdIxCzAJBgNVBAYTAlVT -->
+<!-- MRMwEQYDVQQIEwpXYXNoaW5ndG9uMRAwDgYDVQQHEwdSZWRtb25kMR4wHAYDVQQK -->
+<!-- ExVNaWNyb3NvZnQgQ29ycG9yYXRpb24xLTArBgNVBAsTJE1pY3Jvc29mdCBJcmVs -->
+<!-- YW5kIE9wZXJhdGlvbnMgTGltaXRlZDEmMCQGA1UECxMdVGhhbGVzIFRTUyBFU046 -->
+<!-- RkM0MS00QkQ0LUQyMjAxJTAjBgNVBAMTHE1pY3Jvc29mdCBUaW1lLVN0YW1wIFNl -->
+<!-- cnZpY2WgghF4MIIHJzCCBQ+gAwIBAgITMwAAAbn2AA1lVE+8AwABAAABuTANBgkq -->
+<!-- hkiG9w0BAQsFADB8MQswCQYDVQQGEwJVUzETMBEGA1UECBMKV2FzaGluZ3RvbjEQ -->
+<!-- MA4GA1UEBxMHUmVkbW9uZDEeMBwGA1UEChMVTWljcm9zb2Z0IENvcnBvcmF0aW9u -->
+<!-- MSYwJAYDVQQDEx1NaWNyb3NvZnQgVGltZS1TdGFtcCBQQ0EgMjAxMDAeFw0yMjA5 -->
+<!-- MjAyMDIyMTdaFw0yMzEyMTQyMDIyMTdaMIHSMQswCQYDVQQGEwJVUzETMBEGA1UE -->
+<!-- CBMKV2FzaGluZ3RvbjEQMA4GA1UEBxMHUmVkbW9uZDEeMBwGA1UEChMVTWljcm9z -->
+<!-- b2Z0IENvcnBvcmF0aW9uMS0wKwYDVQQLEyRNaWNyb3NvZnQgSXJlbGFuZCBPcGVy -->
+<!-- YXRpb25zIExpbWl0ZWQxJjAkBgNVBAsTHVRoYWxlcyBUU1MgRVNOOkZDNDEtNEJE -->
+<!-- NC1EMjIwMSUwIwYDVQQDExxNaWNyb3NvZnQgVGltZS1TdGFtcCBTZXJ2aWNlMIIC -->
+<!-- IjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEA40k+yWH1FsfJAQJtQgg3EwXm -->
+<!-- 5CTI3TtUhKEhNe5sulacA2AEIu8JwmXuj/Ycc5GexFyZIg0n+pyUCYsis6Odietu -->
+<!-- hwCeLGIwRcL5rWxnzirFha0RVjtVjDQsJzNj7zpT/yyGDGqxp7MqlauI85ylXVKH -->
+<!-- xKw7F/fTI7uO+V38gEDdPqUczalP8dGNaT+v27LHRDhq3HSaQtVhL3Lnn+hOUosT -->
+<!-- TSHv3ZL6Zpp0B3LdWBPB6LCgQ5cPvznC/eH5/Af/BNC0L2WEDGEw7in44/3zzxbG -->
+<!-- RuXoGpFZe53nhFPOqnZWv7J6fVDUDq6bIwHterSychgbkHUBxzhSAmU9D9mIySqD -->
+<!-- FA0UJZC/PQb2guBI8PwrLQCRfbY9wM5ug+41PhFx5Y9fRRVlSxf0hSCztAXjUeJB -->
+<!-- LAR444cbKt9B2ZKyUBOtuYf/XwzlCuxMzkkg2Ny30bjbGo3xUX1nxY6IYyM1u+Wl -->
+<!-- wSabKxiXlDKGsQOgWdBNTtsWsPclfR8h+7WxstZ4GpfBunhnzIAJO2mErZVvM6+L -->
+<!-- i9zREKZE3O9hBDY+Nns1pNcTga7e+CAAn6u3NRMB8mi285KpwyA3AtlrVj4RP+Vv -->
+<!-- RXKOtjAW4e2DRBbJCM/nfnQtOm/TzqnJVSHgDfD86zmFMYVmAV7lsLIyeljT0zTI -->
+<!-- 90dpD/nqhhSxIhzIrJUCAwEAAaOCAUkwggFFMB0GA1UdDgQWBBS3sDhx21hDmgmM -->
+<!-- TVmqtKienjVEUjAfBgNVHSMEGDAWgBSfpxVdAF5iXYP05dJlpxtTNRnpcjBfBgNV -->
+<!-- HR8EWDBWMFSgUqBQhk5odHRwOi8vd3d3Lm1pY3Jvc29mdC5jb20vcGtpb3BzL2Ny -->
+<!-- bC9NaWNyb3NvZnQlMjBUaW1lLVN0YW1wJTIwUENBJTIwMjAxMCgxKS5jcmwwbAYI -->
+<!-- KwYBBQUHAQEEYDBeMFwGCCsGAQUFBzAChlBodHRwOi8vd3d3Lm1pY3Jvc29mdC5j -->
+<!-- b20vcGtpb3BzL2NlcnRzL01pY3Jvc29mdCUyMFRpbWUtU3RhbXAlMjBQQ0ElMjAy -->
+<!-- MDEwKDEpLmNydDAMBgNVHRMBAf8EAjAAMBYGA1UdJQEB/wQMMAoGCCsGAQUFBwMI -->
+<!-- MA4GA1UdDwEB/wQEAwIHgDANBgkqhkiG9w0BAQsFAAOCAgEAzdxns0VQdEywsrOO -->
+<!-- Xusk8iS/ugn6z2SS63SFmJ/1ZK3rRLNgZQunXOZ0+pz7Dx4dOSGpfQYoKnZNOpLM -->
+<!-- FcGHAc6bz6nqFTE2UN7AYxlSiz3nZpNduUBPc4oGd9UEtDJRq+tKO4kZkBbfRw1j -->
+<!-- euNUNSUYP5XKBAfJJoNq+IlBsrr/p9C9RQWioiTeV0Z+OcC2d5uxWWqHpZZqZVzk -->
+<!-- Bl2lZHWNLM3+jEpipzUEbhLHGU+1x+sB0HP9xThvFVeoAB/TY1mxy8k2lGc4At/m -->
+<!-- RWjYe6klcKyT1PM/k81baxNLdObCEhCY/GvQTRSo6iNSsElQ6FshMDFydJr8gyW4 -->
+<!-- vUddG0tBkj7GzZ5G2485SwpRbvX/Vh6qxgIscu+7zZx4NVBC8/sYcQSSnaQSOKh9 -->
+<!-- uNgSsGjaIIRrHF5fhn0e8CADgyxCRufp7gQVB/Xew/4qfdeAwi8luosl4VxCNr5J -->
+<!-- R45e7lx+TF7QbNM2iN3IjDNoeWE5+VVFk2vF57cH7JnB3ckcMi+/vW5Ij9IjPO31 -->
+<!-- xTYbIdBWrEFKtG0pbpbxXDvOlW+hWwi/eWPGD7s2IZKVdfWzvNsE0MxSP06fM6Uc -->
+<!-- r/eas5TxgS5F/pHBqRblQJ4ZqbLkyIq7Zi7IqIYEK/g4aE+y017sAuQQ6HwFfXa3 -->
+<!-- ie25i76DD0vrII9jSNZhpC3MA/0wggdxMIIFWaADAgECAhMzAAAAFcXna54Cm0mZ -->
+<!-- AAAAAAAVMA0GCSqGSIb3DQEBCwUAMIGIMQswCQYDVQQGEwJVUzETMBEGA1UECBMK -->
+<!-- V2FzaGluZ3RvbjEQMA4GA1UEBxMHUmVkbW9uZDEeMBwGA1UEChMVTWljcm9zb2Z0 -->
+<!-- IENvcnBvcmF0aW9uMTIwMAYDVQQDEylNaWNyb3NvZnQgUm9vdCBDZXJ0aWZpY2F0 -->
+<!-- ZSBBdXRob3JpdHkgMjAxMDAeFw0yMTA5MzAxODIyMjVaFw0zMDA5MzAxODMyMjVa -->
+<!-- MHwxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpXYXNoaW5ndG9uMRAwDgYDVQQHEwdS -->
+<!-- ZWRtb25kMR4wHAYDVQQKExVNaWNyb3NvZnQgQ29ycG9yYXRpb24xJjAkBgNVBAMT -->
+<!-- HU1pY3Jvc29mdCBUaW1lLVN0YW1wIFBDQSAyMDEwMIICIjANBgkqhkiG9w0BAQEF -->
+<!-- AAOCAg8AMIICCgKCAgEA5OGmTOe0ciELeaLL1yR5vQ7VgtP97pwHB9KpbE51yMo1 -->
+<!-- V/YBf2xK4OK9uT4XYDP/XE/HZveVU3Fa4n5KWv64NmeFRiMMtY0Tz3cywBAY6GB9 -->
+<!-- alKDRLemjkZrBxTzxXb1hlDcwUTIcVxRMTegCjhuje3XD9gmU3w5YQJ6xKr9cmmv -->
+<!-- Haus9ja+NSZk2pg7uhp7M62AW36MEBydUv626GIl3GoPz130/o5Tz9bshVZN7928 -->
+<!-- jaTjkY+yOSxRnOlwaQ3KNi1wjjHINSi947SHJMPgyY9+tVSP3PoFVZhtaDuaRr3t -->
+<!-- pK56KTesy+uDRedGbsoy1cCGMFxPLOJiss254o2I5JasAUq7vnGpF1tnYN74kpEe -->
+<!-- HT39IM9zfUGaRnXNxF803RKJ1v2lIH1+/NmeRd+2ci/bfV+AutuqfjbsNkz2K26o -->
+<!-- ElHovwUDo9Fzpk03dJQcNIIP8BDyt0cY7afomXw/TNuvXsLz1dhzPUNOwTM5TI4C -->
+<!-- vEJoLhDqhFFG4tG9ahhaYQFzymeiXtcodgLiMxhy16cg8ML6EgrXY28MyTZki1ug -->
+<!-- poMhXV8wdJGUlNi5UPkLiWHzNgY1GIRH29wb0f2y1BzFa/ZcUlFdEtsluq9QBXps -->
+<!-- xREdcu+N+VLEhReTwDwV2xo3xwgVGD94q0W29R6HXtqPnhZyacaue7e3PmriLq0C -->
+<!-- AwEAAaOCAd0wggHZMBIGCSsGAQQBgjcVAQQFAgMBAAEwIwYJKwYBBAGCNxUCBBYE -->
+<!-- FCqnUv5kxJq+gpE8RjUpzxD/LwTuMB0GA1UdDgQWBBSfpxVdAF5iXYP05dJlpxtT -->
+<!-- NRnpcjBcBgNVHSAEVTBTMFEGDCsGAQQBgjdMg30BATBBMD8GCCsGAQUFBwIBFjNo -->
+<!-- dHRwOi8vd3d3Lm1pY3Jvc29mdC5jb20vcGtpb3BzL0RvY3MvUmVwb3NpdG9yeS5o -->
+<!-- dG0wEwYDVR0lBAwwCgYIKwYBBQUHAwgwGQYJKwYBBAGCNxQCBAweCgBTAHUAYgBD -->
+<!-- AEEwCwYDVR0PBAQDAgGGMA8GA1UdEwEB/wQFMAMBAf8wHwYDVR0jBBgwFoAU1fZW -->
+<!-- y4/oolxiaNE9lJBb186aGMQwVgYDVR0fBE8wTTBLoEmgR4ZFaHR0cDovL2NybC5t -->
+<!-- aWNyb3NvZnQuY29tL3BraS9jcmwvcHJvZHVjdHMvTWljUm9vQ2VyQXV0XzIwMTAt -->
+<!-- MDYtMjMuY3JsMFoGCCsGAQUFBwEBBE4wTDBKBggrBgEFBQcwAoY+aHR0cDovL3d3 -->
+<!-- dy5taWNyb3NvZnQuY29tL3BraS9jZXJ0cy9NaWNSb29DZXJBdXRfMjAxMC0wNi0y -->
+<!-- My5jcnQwDQYJKoZIhvcNAQELBQADggIBAJ1VffwqreEsH2cBMSRb4Z5yS/ypb+pc -->
+<!-- FLY+TkdkeLEGk5c9MTO1OdfCcTY/2mRsfNB1OW27DzHkwo/7bNGhlBgi7ulmZzpT -->
+<!-- Td2YurYeeNg2LpypglYAA7AFvonoaeC6Ce5732pvvinLbtg/SHUB2RjebYIM9W0j -->
+<!-- VOR4U3UkV7ndn/OOPcbzaN9l9qRWqveVtihVJ9AkvUCgvxm2EhIRXT0n4ECWOKz3 -->
+<!-- +SmJw7wXsFSFQrP8DJ6LGYnn8AtqgcKBGUIZUnWKNsIdw2FzLixre24/LAl4FOmR -->
+<!-- sqlb30mjdAy87JGA0j3mSj5mO0+7hvoyGtmW9I/2kQH2zsZ0/fZMcm8Qq3UwxTSw -->
+<!-- ethQ/gpY3UA8x1RtnWN0SCyxTkctwRQEcb9k+SS+c23Kjgm9swFXSVRk2XPXfx5b -->
+<!-- RAGOWhmRaw2fpCjcZxkoJLo4S5pu+yFUa2pFEUep8beuyOiJXk+d0tBMdrVXVAmx -->
+<!-- aQFEfnyhYWxz/gq77EFmPWn9y8FBSX5+k77L+DvktxW/tM4+pTFRhLy/AsGConsX -->
+<!-- HRWJjXD+57XQKBqJC4822rpM+Zv/Cuk0+CQ1ZyvgDbjmjJnW4SLq8CdCPSWU5nR0 -->
+<!-- W2rRnj7tfqAxM328y+l7vzhwRNGQ8cirOoo6CGJ/2XBjU02N7oJtpQUQwXEGahC0 -->
+<!-- HVUzWLOhcGbyoYIC1DCCAj0CAQEwggEAoYHYpIHVMIHSMQswCQYDVQQGEwJVUzET -->
+<!-- MBEGA1UECBMKV2FzaGluZ3RvbjEQMA4GA1UEBxMHUmVkbW9uZDEeMBwGA1UEChMV -->
+<!-- TWljcm9zb2Z0IENvcnBvcmF0aW9uMS0wKwYDVQQLEyRNaWNyb3NvZnQgSXJlbGFu -->
+<!-- ZCBPcGVyYXRpb25zIExpbWl0ZWQxJjAkBgNVBAsTHVRoYWxlcyBUU1MgRVNOOkZD -->
+<!-- NDEtNEJENC1EMjIwMSUwIwYDVQQDExxNaWNyb3NvZnQgVGltZS1TdGFtcCBTZXJ2 -->
+<!-- aWNloiMKAQEwBwYFKw4DAhoDFQDHYh4YeGTnwxCTPNJaScZwuN+BOqCBgzCBgKR+ -->
+<!-- MHwxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpXYXNoaW5ndG9uMRAwDgYDVQQHEwdS -->
+<!-- ZWRtb25kMR4wHAYDVQQKExVNaWNyb3NvZnQgQ29ycG9yYXRpb24xJjAkBgNVBAMT -->
+<!-- HU1pY3Jvc29mdCBUaW1lLVN0YW1wIFBDQSAyMDEwMA0GCSqGSIb3DQEBBQUAAgUA -->
+<!-- 6GtOFjAiGA8yMDIzMDcyNjE1NDczNFoYDzIwMjMwNzI3MTU0NzM0WjB0MDoGCisG -->
+<!-- AQQBhFkKBAExLDAqMAoCBQDoa04WAgEAMAcCAQACAlsIMAcCAQACAhJJMAoCBQDo -->
+<!-- bJ+WAgEAMDYGCisGAQQBhFkKBAIxKDAmMAwGCisGAQQBhFkKAwKgCjAIAgEAAgMH -->
+<!-- oSChCjAIAgEAAgMBhqAwDQYJKoZIhvcNAQEFBQADgYEAjYSznb7KyuXM9FnKPG7O -->
+<!-- aH6z3oHf+ERRs39B72Mb2lTHkXcpSZ7WtcDhHcrEQVcD+7SoMp5XreXtjK4QqGaI -->
+<!-- AxgrQXapjCLTkM1VOm9M80SvBjXzpb7Fi3bY3NNXTcVRrQGizpwpOxxKhia8m0wn -->
+<!-- fIsHdLwJM9od4Mt5Nh2aqKcxggQNMIIECQIBATCBkzB8MQswCQYDVQQGEwJVUzET -->
+<!-- MBEGA1UECBMKV2FzaGluZ3RvbjEQMA4GA1UEBxMHUmVkbW9uZDEeMBwGA1UEChMV -->
+<!-- TWljcm9zb2Z0IENvcnBvcmF0aW9uMSYwJAYDVQQDEx1NaWNyb3NvZnQgVGltZS1T -->
+<!-- dGFtcCBQQ0EgMjAxMAITMwAAAbn2AA1lVE+8AwABAAABuTANBglghkgBZQMEAgEF -->
+<!-- AKCCAUowGgYJKoZIhvcNAQkDMQ0GCyqGSIb3DQEJEAEEMC8GCSqGSIb3DQEJBDEi -->
+<!-- BCAW9xYdbbcevr6W3Rtp7Y0C+SehE7OO3yNyJrZgmOtmADCB+gYLKoZIhvcNAQkQ -->
+<!-- Ai8xgeowgecwgeQwgb0EIGTrRs7xbzm5MB8lUQ7e9fZotpAVyBwal3Cw6iL5+g/0 -->
+<!-- MIGYMIGApH4wfDELMAkGA1UEBhMCVVMxEzARBgNVBAgTCldhc2hpbmd0b24xEDAO -->
+<!-- BgNVBAcTB1JlZG1vbmQxHjAcBgNVBAoTFU1pY3Jvc29mdCBDb3Jwb3JhdGlvbjEm -->
+<!-- MCQGA1UEAxMdTWljcm9zb2Z0IFRpbWUtU3RhbXAgUENBIDIwMTACEzMAAAG59gAN -->
+<!-- ZVRPvAMAAQAAAbkwIgQgDs4jTNJbKqFLvhHxp4GyNJRWXSkiPDjFhLJWTB+b1mkw -->
+<!-- DQYJKoZIhvcNAQELBQAEggIAkk7k58/IW5fTb3Gb8HtFECkvkILDDTzO/MseyW/3 -->
+<!-- 4EkjUy/eJ3VVhhyLzNxG7dOULAOnyotbizMIE8d9C8IfGGggZ+mGAPohPXfbcd1w -->
+<!-- Z04mgvv7zjDbDFXPPIltk8LblGzwVxafdi6qd2Hfj0K9QTw0cA1tnXyCwf5XKV0+ -->
+<!-- MGy+hIan/GeKlMJP9Hyo3NW2AvbWmOFlIKhkIE7gQwSG9tabl6Ssd14i+pD3LR2f -->
+<!-- yztyz4n/+jwlNAK8AudrmDDUkYHwnAmjUSOl8e1YkUe7llnsysy/67aCR6osNkkY -->
+<!-- OXqC1ZlSbFLI5RG9qM/+8i/0/EFk47tbHardHz6ZeHItpnMm3N+Lzs4sbZQ0tHNX -->
+<!-- 6TnKSWLcxb5WU24R6jSoaDB+7Wa0Nq84pNtAZ3sv98XMDf2NNlSf0FOhT0N+o9Bp -->
+<!-- PPK+Tffo62xwil5SJUT8kPSlNpuadE6QiQhWTJ1QZmQhqiazo0mmuOVfqS/Bm4/K -->
+<!-- DxvAjpEMDvxKnIrerAUFwbeOcHX5MZCpwRJpsPnZezOskjq6arvG2Qrv5EcdwAZE -->
+<!-- l6D6Q44xqSGiV9D4ZSTuK2y+QU/YS9WK3RnN6kV5wn3l8Nne+1z4QLa/QUtkom0M -->
+<!-- YTO12KoIXbUOD3xiUhSJb/r7mgkPGF3yrgZ4xNwX8CxyA1UhdqmSvxf5jnxMmBtW -->
+<!-- N8w= -->
+<!-- SIG # End signature block -->

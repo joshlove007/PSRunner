@@ -1,0 +1,390 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">Microsoft.Graph.Devices.CloudPrint</S>
+      <Version N="Version">2.3.0</Version>
+      <S N="Type">Module</S>
+      <S N="Description">Microsoft Graph PowerShell Cmdlets</S>
+      <S N="Author">Microsoft Corporation</S>
+      <S N="CompanyName">msgraph-sdk-powershell</S>
+      <S N="Copyright">Microsoft Corporation. All rights reserved.</S>
+      <DT N="PublishedDate">2023-08-10T21:53:51+00:00</DT>
+      <Obj N="InstalledDate" RefId="1">
+        <DT>2023-08-17T20:36:12.5376058+00:00</DT>
+        <MS>
+          <Obj N="DisplayHint" RefId="2">
+            <TN RefId="1">
+              <T>Microsoft.PowerShell.Commands.DisplayHintType</T>
+              <T>System.Enum</T>
+              <T>System.ValueType</T>
+              <T>System.Object</T>
+            </TN>
+            <ToString>DateTime</ToString>
+            <I32>2</I32>
+          </Obj>
+        </MS>
+      </Obj>
+      <Nil N="UpdatedDate" />
+      <URI N="LicenseUri">https://aka.ms/devservicesagreement</URI>
+      <URI N="ProjectUri">https://github.com/microsoftgraph/msgraph-sdk-powershell</URI>
+      <URI N="IconUri">https://raw.githubusercontent.com/microsoftgraph/msgraph-sdk-powershell/features/2.0/docs/images/graph_color256.png</URI>
+      <Obj N="Tags" RefId="3">
+        <TN RefId="2">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>Microsoft</S>
+          <S>Office365</S>
+          <S>Graph</S>
+          <S>PowerShell</S>
+          <S>PSModule</S>
+          <S>PSEdition_Core</S>
+          <S>PSEdition_Desktop</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="4">
+        <TN RefId="3">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Obj N="Value" RefId="5">
+              <TNRef RefId="2" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Obj N="Value" RefId="6">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Get-MgPrint</S>
+                <S>Get-MgPrintConnector</S>
+                <S>Get-MgPrintConnectorCount</S>
+                <S>Get-MgPrintOperation</S>
+                <S>Get-MgPrintOperationCount</S>
+                <S>Get-MgPrintPrinter</S>
+                <S>Get-MgPrintPrinterConnector</S>
+                <S>Get-MgPrintPrinterConnectorCount</S>
+                <S>Get-MgPrintPrinterCount</S>
+                <S>Get-MgPrintPrinterJob</S>
+                <S>Get-MgPrintPrinterJobCount</S>
+                <S>Get-MgPrintPrinterJobDocument</S>
+                <S>Get-MgPrintPrinterJobDocumentContent</S>
+                <S>Get-MgPrintPrinterJobDocumentCount</S>
+                <S>Get-MgPrintPrinterJobTask</S>
+                <S>Get-MgPrintPrinterJobTaskCount</S>
+                <S>Get-MgPrintPrinterJobTaskDefinition</S>
+                <S>Get-MgPrintPrinterJobTaskTrigger</S>
+                <S>Get-MgPrintPrinterShare</S>
+                <S>Get-MgPrintPrinterShareCount</S>
+                <S>Get-MgPrintPrinterTaskTrigger</S>
+                <S>Get-MgPrintPrinterTaskTriggerCount</S>
+                <S>Get-MgPrintPrinterTaskTriggerDefinition</S>
+                <S>Get-MgPrintService</S>
+                <S>Get-MgPrintServiceCount</S>
+                <S>Get-MgPrintServiceEndpoint</S>
+                <S>Get-MgPrintServiceEndpointCount</S>
+                <S>Get-MgPrintShare</S>
+                <S>Get-MgPrintShareAllowedGroup</S>
+                <S>Get-MgPrintShareAllowedGroupByRef</S>
+                <S>Get-MgPrintShareAllowedGroupCount</S>
+                <S>Get-MgPrintShareAllowedUser</S>
+                <S>Get-MgPrintShareAllowedUserByRef</S>
+                <S>Get-MgPrintShareAllowedUserCount</S>
+                <S>Get-MgPrintShareAllowedUserMailboxSetting</S>
+                <S>Get-MgPrintShareCount</S>
+                <S>Get-MgPrintShareJob</S>
+                <S>Get-MgPrintShareJobCount</S>
+                <S>Get-MgPrintShareJobDocument</S>
+                <S>Get-MgPrintShareJobDocumentContent</S>
+                <S>Get-MgPrintShareJobDocumentCount</S>
+                <S>Get-MgPrintShareJobTask</S>
+                <S>Get-MgPrintShareJobTaskCount</S>
+                <S>Get-MgPrintShareJobTaskDefinition</S>
+                <S>Get-MgPrintShareJobTaskTrigger</S>
+                <S>Get-MgPrintSharePrinter</S>
+                <S>Get-MgPrintTaskDefinition</S>
+                <S>Get-MgPrintTaskDefinitionCount</S>
+                <S>Get-MgPrintTaskDefinitionTask</S>
+                <S>Get-MgPrintTaskDefinitionTaskCount</S>
+                <S>Get-MgPrintTaskDefinitionTaskTrigger</S>
+                <S>Invoke-MgAbortPrintPrinterJob</S>
+                <S>Invoke-MgAbortPrintShareJob</S>
+                <S>Invoke-MgRedirectPrintPrinterJob</S>
+                <S>Invoke-MgRedirectPrintShareJob</S>
+                <S>New-MgPrintConnector</S>
+                <S>New-MgPrintOperation</S>
+                <S>New-MgPrintPrinter</S>
+                <S>New-MgPrintPrinterJob</S>
+                <S>New-MgPrintPrinterJobDocument</S>
+                <S>New-MgPrintPrinterJobDocumentUploadSession</S>
+                <S>New-MgPrintPrinterJobTask</S>
+                <S>New-MgPrintPrinterTaskTrigger</S>
+                <S>New-MgPrintService</S>
+                <S>New-MgPrintServiceEndpoint</S>
+                <S>New-MgPrintShare</S>
+                <S>New-MgPrintShareAllowedGroupByRef</S>
+                <S>New-MgPrintShareAllowedUserByRef</S>
+                <S>New-MgPrintShareJob</S>
+                <S>New-MgPrintShareJobDocument</S>
+                <S>New-MgPrintShareJobDocumentUploadSession</S>
+                <S>New-MgPrintShareJobTask</S>
+                <S>New-MgPrintTaskDefinition</S>
+                <S>New-MgPrintTaskDefinitionTask</S>
+                <S>Remove-MgPrintConnector</S>
+                <S>Remove-MgPrintOperation</S>
+                <S>Remove-MgPrintPrinter</S>
+                <S>Remove-MgPrintPrinterJob</S>
+                <S>Remove-MgPrintPrinterJobDocument</S>
+                <S>Remove-MgPrintPrinterJobTask</S>
+                <S>Remove-MgPrintPrinterTaskTrigger</S>
+                <S>Remove-MgPrintService</S>
+                <S>Remove-MgPrintServiceEndpoint</S>
+                <S>Remove-MgPrintShare</S>
+                <S>Remove-MgPrintShareAllowedGroupByRef</S>
+                <S>Remove-MgPrintShareAllowedUserByRef</S>
+                <S>Remove-MgPrintShareJob</S>
+                <S>Remove-MgPrintShareJobDocument</S>
+                <S>Remove-MgPrintShareJobTask</S>
+                <S>Remove-MgPrintTaskDefinition</S>
+                <S>Remove-MgPrintTaskDefinitionTask</S>
+                <S>Restore-MgPrintPrinterFactoryDefault</S>
+                <S>Set-MgPrintPrinterJobDocumentContent</S>
+                <S>Set-MgPrintShareJobDocumentContent</S>
+                <S>Start-MgPrintPrinterJob</S>
+                <S>Start-MgPrintShareJob</S>
+                <S>Stop-MgPrintPrinterJob</S>
+                <S>Stop-MgPrintShareJob</S>
+                <S>Update-MgPrint</S>
+                <S>Update-MgPrintConnector</S>
+                <S>Update-MgPrintOperation</S>
+                <S>Update-MgPrintPrinter</S>
+                <S>Update-MgPrintPrinterJob</S>
+                <S>Update-MgPrintPrinterJobDocument</S>
+                <S>Update-MgPrintPrinterJobTask</S>
+                <S>Update-MgPrintPrinterTaskTrigger</S>
+                <S>Update-MgPrintService</S>
+                <S>Update-MgPrintServiceEndpoint</S>
+                <S>Update-MgPrintShare</S>
+                <S>Update-MgPrintShareAllowedUserMailboxSetting</S>
+                <S>Update-MgPrintShareJob</S>
+                <S>Update-MgPrintShareJobDocument</S>
+                <S>Update-MgPrintShareJobTask</S>
+                <S>Update-MgPrintTaskDefinition</S>
+                <S>Update-MgPrintTaskDefinitionTask</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="7">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Get-MgPrint</S>
+                <S>Get-MgPrintConnector</S>
+                <S>Get-MgPrintConnectorCount</S>
+                <S>Get-MgPrintOperation</S>
+                <S>Get-MgPrintOperationCount</S>
+                <S>Get-MgPrintPrinter</S>
+                <S>Get-MgPrintPrinterConnector</S>
+                <S>Get-MgPrintPrinterConnectorCount</S>
+                <S>Get-MgPrintPrinterCount</S>
+                <S>Get-MgPrintPrinterJob</S>
+                <S>Get-MgPrintPrinterJobCount</S>
+                <S>Get-MgPrintPrinterJobDocument</S>
+                <S>Get-MgPrintPrinterJobDocumentContent</S>
+                <S>Get-MgPrintPrinterJobDocumentCount</S>
+                <S>Get-MgPrintPrinterJobTask</S>
+                <S>Get-MgPrintPrinterJobTaskCount</S>
+                <S>Get-MgPrintPrinterJobTaskDefinition</S>
+                <S>Get-MgPrintPrinterJobTaskTrigger</S>
+                <S>Get-MgPrintPrinterShare</S>
+                <S>Get-MgPrintPrinterShareCount</S>
+                <S>Get-MgPrintPrinterTaskTrigger</S>
+                <S>Get-MgPrintPrinterTaskTriggerCount</S>
+                <S>Get-MgPrintPrinterTaskTriggerDefinition</S>
+                <S>Get-MgPrintService</S>
+                <S>Get-MgPrintServiceCount</S>
+                <S>Get-MgPrintServiceEndpoint</S>
+                <S>Get-MgPrintServiceEndpointCount</S>
+                <S>Get-MgPrintShare</S>
+                <S>Get-MgPrintShareAllowedGroup</S>
+                <S>Get-MgPrintShareAllowedGroupByRef</S>
+                <S>Get-MgPrintShareAllowedGroupCount</S>
+                <S>Get-MgPrintShareAllowedUser</S>
+                <S>Get-MgPrintShareAllowedUserByRef</S>
+                <S>Get-MgPrintShareAllowedUserCount</S>
+                <S>Get-MgPrintShareAllowedUserMailboxSetting</S>
+                <S>Get-MgPrintShareCount</S>
+                <S>Get-MgPrintShareJob</S>
+                <S>Get-MgPrintShareJobCount</S>
+                <S>Get-MgPrintShareJobDocument</S>
+                <S>Get-MgPrintShareJobDocumentContent</S>
+                <S>Get-MgPrintShareJobDocumentCount</S>
+                <S>Get-MgPrintShareJobTask</S>
+                <S>Get-MgPrintShareJobTaskCount</S>
+                <S>Get-MgPrintShareJobTaskDefinition</S>
+                <S>Get-MgPrintShareJobTaskTrigger</S>
+                <S>Get-MgPrintSharePrinter</S>
+                <S>Get-MgPrintTaskDefinition</S>
+                <S>Get-MgPrintTaskDefinitionCount</S>
+                <S>Get-MgPrintTaskDefinitionTask</S>
+                <S>Get-MgPrintTaskDefinitionTaskCount</S>
+                <S>Get-MgPrintTaskDefinitionTaskTrigger</S>
+                <S>Invoke-MgAbortPrintPrinterJob</S>
+                <S>Invoke-MgAbortPrintShareJob</S>
+                <S>Invoke-MgRedirectPrintPrinterJob</S>
+                <S>Invoke-MgRedirectPrintShareJob</S>
+                <S>New-MgPrintConnector</S>
+                <S>New-MgPrintOperation</S>
+                <S>New-MgPrintPrinter</S>
+                <S>New-MgPrintPrinterJob</S>
+                <S>New-MgPrintPrinterJobDocument</S>
+                <S>New-MgPrintPrinterJobDocumentUploadSession</S>
+                <S>New-MgPrintPrinterJobTask</S>
+                <S>New-MgPrintPrinterTaskTrigger</S>
+                <S>New-MgPrintService</S>
+                <S>New-MgPrintServiceEndpoint</S>
+                <S>New-MgPrintShare</S>
+                <S>New-MgPrintShareAllowedGroupByRef</S>
+                <S>New-MgPrintShareAllowedUserByRef</S>
+                <S>New-MgPrintShareJob</S>
+                <S>New-MgPrintShareJobDocument</S>
+                <S>New-MgPrintShareJobDocumentUploadSession</S>
+                <S>New-MgPrintShareJobTask</S>
+                <S>New-MgPrintTaskDefinition</S>
+                <S>New-MgPrintTaskDefinitionTask</S>
+                <S>Remove-MgPrintConnector</S>
+                <S>Remove-MgPrintOperation</S>
+                <S>Remove-MgPrintPrinter</S>
+                <S>Remove-MgPrintPrinterJob</S>
+                <S>Remove-MgPrintPrinterJobDocument</S>
+                <S>Remove-MgPrintPrinterJobTask</S>
+                <S>Remove-MgPrintPrinterTaskTrigger</S>
+                <S>Remove-MgPrintService</S>
+                <S>Remove-MgPrintServiceEndpoint</S>
+                <S>Remove-MgPrintShare</S>
+                <S>Remove-MgPrintShareAllowedGroupByRef</S>
+                <S>Remove-MgPrintShareAllowedUserByRef</S>
+                <S>Remove-MgPrintShareJob</S>
+                <S>Remove-MgPrintShareJobDocument</S>
+                <S>Remove-MgPrintShareJobTask</S>
+                <S>Remove-MgPrintTaskDefinition</S>
+                <S>Remove-MgPrintTaskDefinitionTask</S>
+                <S>Restore-MgPrintPrinterFactoryDefault</S>
+                <S>Set-MgPrintPrinterJobDocumentContent</S>
+                <S>Set-MgPrintShareJobDocumentContent</S>
+                <S>Start-MgPrintPrinterJob</S>
+                <S>Start-MgPrintShareJob</S>
+                <S>Stop-MgPrintPrinterJob</S>
+                <S>Stop-MgPrintShareJob</S>
+                <S>Update-MgPrint</S>
+                <S>Update-MgPrintConnector</S>
+                <S>Update-MgPrintOperation</S>
+                <S>Update-MgPrintPrinter</S>
+                <S>Update-MgPrintPrinterJob</S>
+                <S>Update-MgPrintPrinterJobDocument</S>
+                <S>Update-MgPrintPrinterJobTask</S>
+                <S>Update-MgPrintPrinterTaskTrigger</S>
+                <S>Update-MgPrintService</S>
+                <S>Update-MgPrintServiceEndpoint</S>
+                <S>Update-MgPrintShare</S>
+                <S>Update-MgPrintShareAllowedUserMailboxSetting</S>
+                <S>Update-MgPrintShareJob</S>
+                <S>Update-MgPrintShareJobDocument</S>
+                <S>Update-MgPrintShareJobTask</S>
+                <S>Update-MgPrintTaskDefinition</S>
+                <S>Update-MgPrintTaskDefinitionTask</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <S N="ReleaseNotes">See https://aka.ms/GraphPowerShell-Release.</S>
+      <Obj N="Dependencies" RefId="8">
+        <TNRef RefId="2" />
+        <LST>
+          <Obj RefId="9">
+            <TN RefId="4">
+              <T>System.Collections.Specialized.OrderedDictionary</T>
+              <T>System.Object</T>
+            </TN>
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Microsoft.Graph.Authentication</S>
+              </En>
+              <En>
+                <S N="Key">RequiredVersion</S>
+                <S N="Value">2.3.0</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Microsoft.Graph.Authentication/[2.3.0]</S>
+              </En>
+            </DCT>
+          </Obj>
+        </LST>
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="10">
+        <TN RefId="5">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">Microsoft Corporation. All rights reserved.</S>
+          <S N="description">Microsoft Graph PowerShell Cmdlets</S>
+          <S N="requireLicenseAcceptance">True</S>
+          <S N="releaseNotes">See https://aka.ms/GraphPowerShell-Release.</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">52631</S>
+          <S N="downloadCount">2155220</S>
+          <S N="packageSize">2976929</S>
+          <S N="published">08/10/2023 21:53:51 +00:00</S>
+          <S N="created">08/10/2023 21:53:51 +00:00</S>
+          <S N="lastUpdated">08/17/2023 20:34:51 +00:00</S>
+          <S N="tags">Microsoft Office365 Graph PowerShell PSModule PSIncludes_Cmdlet PSEdition_Core PSEdition_Desktop PSFunction_Get-MgPrint PSCommand_Get-MgPrint PSFunction_Get-MgPrintConnector PSCommand_Get-MgPrintConnector PSFunction_Get-MgPrintConnectorCount PSCommand_Get-MgPrintConnectorCount PSFunction_Get-MgPrintOperation PSCommand_Get-MgPrintOperation PSFunction_Get-MgPrintOperationCount PSCommand_Get-MgPrintOperationCount PSFunction_Get-MgPrintPrinter PSCommand_Get-MgPrintPrinter PSFunction_Get-MgPrintPrinterConnector PSCommand_Get-MgPrintPrinterConnector PSFunction_Get-MgPrintPrinterConnectorCount PSCommand_Get-MgPrintPrinterConnectorCount PSFunction_Get-MgPrintPrinterCount PSCommand_Get-MgPrintPrinterCount PSFunction_Get-MgPrintPrinterJob PSCommand_Get-MgPrintPrinterJob PSFunction_Get-MgPrintPrinterJobCount PSCommand_Get-MgPrintPrinterJobCount PSFunction_Get-MgPrintPrinterJobDocument PSCommand_Get-MgPrintPrinterJobDocument PSFunction_Get-MgPrintPrinterJobDocumentContent PSCommand_Get-MgPrintPrinterJobDocumentContent PSFunction_Get-MgPrintPrinterJobDocumentCount PSCommand_Get-MgPrintPrinterJobDocumentCount PSFunction_Get-MgPrintPrinterJobTask PSCommand_Get-MgPrintPrinterJobTask PSFunction_Get-MgPrintPrinterJobTaskCount PSCommand_Get-MgPrintPrinterJobTaskCount PSFunction_Get-MgPrintPrinterJobTaskDefinition PSCommand_Get-MgPrintPrinterJobTaskDefinition PSFunction_Get-MgPrintPrinterJobTaskTrigger PSCommand_Get-MgPrintPrinterJobTaskTrigger PSFunction_Get-MgPrintPrinterShare PSCommand_Get-MgPrintPrinterShare PSFunction_Get-MgPrintPrinterShareCount PSCommand_Get-MgPrintPrinterShareCount PSFunction_Get-MgPrintPrinterTaskTrigger PSCommand_Get-MgPrintPrinterTaskTrigger PSFunction_Get-MgPrintPrinterTaskTriggerCount PSCommand_Get-MgPrintPrinterTaskTriggerCount PSFunction_Get-MgPrintPrinterTaskTriggerDefinition PSCommand_Get-MgPrintPrinterTaskTriggerDefinition PSFunction_Get-MgPrintService PSCommand_Get-MgPrintService PSFunction_Get-MgPrintServiceCount PSCommand_Get-MgPrintServiceCount PSFunction_Get-MgPrintServiceEndpoint PSCommand_Get-MgPrintServiceEndpoint PSFunction_Get-MgPrintServiceEndpointCount PSCommand_Get-MgPrintServiceEndpointCount PSFunction_Get-MgPrintShare PSCommand_Get-MgPrintShare PSFunction_Get-MgPrintShareAllowedGroup PSCommand_Get-MgPrintShareAllowedGroup PSFunction_Get-MgPrintShareAllowedGroupByRef PSCommand_Get-MgPrintShareAllowedGroupByRef PSFunction_Get-MgPrintShareAllowedGroupCount PSCommand_Get-MgPrintShareAllowedGroupCount PSFunction_Get-MgPrintShareAllowedUser PSCommand_Get-MgPrintShareAllowedUser PSFunction_Get-MgPrintShareAllowedUserByRef PSCommand_Get-MgPrintShareAllowedUserByRef PSFunction_Get-MgPrintShareAllowedUserCount PSCommand_Get-MgPrintShareAllowedUserCount PSFunction_Get-MgPrintShareAllowedUserMailboxSetting PSCommand_Get-MgPrintShareAllowedUserMailboxSetting PSFunction_Get-MgPrintShareCount PSCommand_Get-MgPrintShareCount PSFunction_Get-MgPrintShareJob PSCommand_Get-MgPrintShareJob PSFunction_Get-MgPrintShareJobCount PSCommand_Get-MgPrintShareJobCount PSFunction_Get-MgPrintShareJobDocument PSCommand_Get-MgPrintShareJobDocument PSFunction_Get-MgPrintShareJobDocumentContent PSCommand_Get-MgPrintShareJobDocumentContent PSFunction_Get-MgPrintShareJobDocumentCount PSCommand_Get-MgPrintShareJobDocumentCount PSFunction_Get-MgPrintShareJobTask PSCommand_Get-MgPrintShareJobTask PSFunction_Get-MgPrintShareJobTaskCount PSCommand_Get-MgPrintShareJobTaskCount PSFunction_Get-MgPrintShareJobTaskDefinition PSCommand_Get-MgPrintShareJobTaskDefinition PSFunction_Get-MgPrintShareJobTaskTrigger PSCommand_Get-MgPrintShareJobTaskTrigger PSFunction_Get-MgPrintSharePrinter PSCommand_Get-MgPrintSharePrinter PSFunction_Get-MgPrintTaskDefinition PSCommand_Get-MgPrintTaskDefinition PSFunction_Get-MgPrintTaskDefinitionCount PSCommand_Get-MgPrintTaskDefinitionCount PSFunction_Get-MgPrintTaskDefinitionTask PSCommand_Get-MgPrintTaskDefinitionTask PSFunction_Get-MgPrintTaskDefinitionTaskCount PSCommand_Get-MgPrintTaskDefinitionTaskCount PSFunction_Get-MgPrintTaskDefinitionTaskTrigger PSCommand_Get-MgPrintTaskDefinitionTaskTrigger PSFunction_Invoke-MgAbortPrintPrinterJob PSCommand_Invoke-MgAbortPrintPrinterJob PSFunction_Invoke-MgAbortPrintShareJob PSCommand_Invoke-MgAbortPrintShareJob PSFunction_Invoke-MgRedirectPrintPrinterJob PSCommand_Invoke-MgRedirectPrintPrinterJob PSFunction_Invoke-MgRedirectPrintShareJob PSCommand_Invoke-MgRedirectPrintShareJob PSFunction_New-MgPrintConnector PSCommand_New-MgPrintConnector PSFunction_New-MgPrintOperation PSCommand_New-MgPrintOperation PSFunction_New-MgPrintPrinter PSCommand_New-MgPrintPrinter PSFunction_New-MgPrintPrinterJob PSCommand_New-MgPrintPrinterJob PSFunction_New-MgPrintPrinterJobDocument PSCommand_New-MgPrintPrinterJobDocument PSFunction_New-MgPrintPrinterJobDocumentUploadSession PSCommand_New-MgPrintPrinterJobDocumentUploadSession PSFunction_New-MgPrintPrinterJobTask PSCommand_New-MgPrintPrinterJobTask PSFunction_New-MgPrintPrinterTaskTrigger PSCommand_New-MgPrintPrinterTaskTrigger PSFunction_New-MgPrintService PSCommand_New-MgPrintService PSFunction_New-MgPrintServiceEndpoint PSCommand_New-MgPrintServiceEndpoint PSFunction_New-MgPrintShare PSCommand_New-MgPrintShare PSFunction_New-MgPrintShareAllowedGroupByRef PSCommand_New-MgPrintShareAllowedGroupByRef PSFunction_New-MgPrintShareAllowedUserByRef PSCommand_New-MgPrintShareAllowedUserByRef PSFunction_New-MgPrintShareJob PSCommand_New-MgPrintShareJob PSFunction_New-MgPrintShareJobDocument PSCommand_New-MgPrintShareJobDocument PSFunction_New-MgPrintShareJobDocumentUploadSession PSCommand_New-MgPrintShareJobDocumentUploadSession PSFunction_New-MgPrintShareJobTask PSCommand_New-MgPrintShareJobTask PSFunction_New-MgPrintTaskDefinition PSCommand_New-MgPrintTaskDefinition PSFunction_New-MgPrintTaskDefinitionTask PSCommand_New-MgPrintTaskDefinitionTask PSFunction_Remove-MgPrintConnector PSCommand_Remove-MgPrintConnector PSFunction_Remove-MgPrintOperation PSCommand_Remove-MgPrintOperation PSFunction_Remove-MgPrintPrinter PSCommand_Remove-MgPrintPrinter PSFunction_Remove-MgPrintPrinterJob PSCommand_Remove-MgPrintPrinterJob PSFunction_Remove-MgPrintPrinterJobDocument PSCommand_Remove-MgPrintPrinterJobDocument PSFunction_Remove-MgPrintPrinterJobTask PSCommand_Remove-MgPrintPrinterJobTask PSFunction_Remove-MgPrintPrinterTaskTrigger PSCommand_Remove-MgPrintPrinterTaskTrigger PSFunction_Remove-MgPrintService PSCommand_Remove-MgPrintService PSFunction_Remove-MgPrintServiceEndpoint PSCommand_Remove-MgPrintServiceEndpoint PSFunction_Remove-MgPrintShare PSCommand_Remove-MgPrintShare PSFunction_Remove-MgPrintShareAllowedGroupByRef PSCommand_Remove-MgPrintShareAllowedGroupByRef PSFunction_Remove-MgPrintShareAllowedUserByRef PSCommand_Remove-MgPrintShareAllowedUserByRef PSFunction_Remove-MgPrintShareJob PSCommand_Remove-MgPrintShareJob PSFunction_Remove-MgPrintShareJobDocument PSCommand_Remove-MgPrintShareJobDocument PSFunction_Remove-MgPrintShareJobTask PSCommand_Remove-MgPrintShareJobTask PSFunction_Remove-MgPrintTaskDefinition PSCommand_Remove-MgPrintTaskDefinition PSFunction_Remove-MgPrintTaskDefinitionTask PSCommand_Remove-MgPrintTaskDefinitionTask PSFunction_Restore-MgPrintPrinterFactoryDefault PSCommand_Restore-MgPrintPrinterFactoryDefault PSFunction_Set-MgPrintPrinterJobDocumentContent PSCommand_Set-MgPrintPrinterJobDocumentContent PSFunction_Set-MgPrintShareJobDocumentContent PSCommand_Set-MgPrintShareJobDocumentContent PSFunction_Start-MgPrintPrinterJob PSCommand_Start-MgPrintPrinterJob PSFunction_Start-MgPrintShareJob PSCommand_Start-MgPrintShareJob PSFunction_Stop-MgPrintPrinterJob PSCommand_Stop-MgPrintPrinterJob PSFunction_Stop-MgPrintShareJob PSCommand_Stop-MgPrintShareJob PSFunction_Update-MgPrint PSCommand_Update-MgPrint PSFunction_Update-MgPrintConnector PSCommand_Update-MgPrintConnector PSFunction_Update-MgPrintOperation PSCommand_Update-MgPrintOperation PSFunction_Update-MgPrintPrinter PSCommand_Update-MgPrintPrinter PSFunction_Update-MgPrintPrinterJob PSCommand_Update-MgPrintPrinterJob PSFunction_Update-MgPrintPrinterJobDocument PSCommand_Update-MgPrintPrinterJobDocument PSFunction_Update-MgPrintPrinterJobTask PSCommand_Update-MgPrintPrinterJobTask PSFunction_Update-MgPrintPrinterTaskTrigger PSCommand_Update-MgPrintPrinterTaskTrigger PSFunction_Update-MgPrintService PSCommand_Update-MgPrintService PSFunction_Update-MgPrintServiceEndpoint PSCommand_Update-MgPrintServiceEndpoint PSFunction_Update-MgPrintShare PSCommand_Update-MgPrintShare PSFunction_Update-MgPrintShareAllowedUserMailboxSetting PSCommand_Update-MgPrintShareAllowedUserMailboxSetting PSFunction_Update-MgPrintShareJob PSCommand_Update-MgPrintShareJob PSFunction_Update-MgPrintShareJobDocument PSCommand_Update-MgPrintShareJobDocument PSFunction_Update-MgPrintShareJobTask PSCommand_Update-MgPrintShareJobTask PSFunction_Update-MgPrintTaskDefinition PSCommand_Update-MgPrintTaskDefinition PSFunction_Update-MgPrintTaskDefinitionTask PSCommand_Update-MgPrintTaskDefinitionTask PSIncludes_Function</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2023-08-17T20:34:51Z</S>
+          <S N="NormalizedVersion">2.3.0</S>
+          <S N="Authors">Microsoft Corporation</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">Microsoft.Graph.Devices.CloudPrint.nuspec|Microsoft.Graph.Devices.CloudPrint.format.ps1xml|Microsoft.Graph.Devices.CloudPrint.psd1|Microsoft.Graph.Devices.CloudPrint.psm1|bin\Microsoft.Graph.Devices.CloudPrint.private.dll|bin\Microsoft.Graph.Devices.CloudPrint.private.deps.json|internal\Microsoft.Graph.Devices.CloudPrint.internal.psm1|custom\Microsoft.Graph.Devices.CloudPrint.custom.psm1|exports\ProxyCmdletDefinitions.ps1|utils\Unprotect-SecureString.ps1|.signature.p7s</S>
+          <S N="GUID">1920dbbe-772a-4def-84b5-f89857768fe5</S>
+          <S N="PowerShellVersion">5.1</S>
+          <S N="DotNetFrameworkVersion">4.7.2</S>
+          <S N="CompanyName">Microsoft Corporation</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">/home/.local/share/powershell/Modules/Microsoft.Graph.Devices.CloudPrint/2.3.0</S>
+    </MS>
+  </Obj>
+</Objs>

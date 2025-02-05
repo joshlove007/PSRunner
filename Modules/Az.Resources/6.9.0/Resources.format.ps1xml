@@ -1,0 +1,915 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Configuration>
+  <ViewDefinitions>
+    <View>
+      <Name>Microsoft.Azure.Commands.Resources.Models.ActiveDirectory.PSADObject</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.Commands.Resources.Models.ActiveDirectory.PSADObject</TypeName>
+      </ViewSelectedBy>
+      <TableControl>
+        <TableHeaders>
+          <TableColumnHeader>
+            <Label>DisplayName</Label>
+            <Width>30</Width>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>Type</Label>
+            <Width>30</Width>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>ObjectId</Label>
+          </TableColumnHeader>
+        </TableHeaders>
+        <TableRowEntries>
+          <TableRowEntry>
+            <Wrap/>
+            <TableColumnItems>
+              <TableColumnItem>
+                <PropertyName>DisplayName</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>Type</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>Id</PropertyName>
+              </TableColumnItem>
+            </TableColumnItems>
+          </TableRowEntry>
+        </TableRowEntries>
+      </TableControl>
+    </View>
+    <View>
+      <Name>Microsoft.Azure.Commands.Resources.Models.PSDeploymentEventData</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.Commands.Resources.Models.PSDeploymentEventData</TypeName>
+      </ViewSelectedBy>
+      <ListControl>
+        <ListEntries>
+          <ListEntry>
+            <ListItems>
+              <ListItem>
+                <Label>Authorization</Label>
+                <PropertyName>Authorization</PropertyName>
+              </ListItem>
+              <ListItem>
+                <Label>ResourceUri</Label>
+                <PropertyName>ResourceUri</PropertyName>
+              </ListItem>
+              <ListItem>
+                <Label>SubscriptionId</Label>
+                <PropertyName>SubscriptionId</PropertyName>
+              </ListItem>
+              <ListItem>
+                <Label>Timestamp(UTC)</Label>
+                <PropertyName>Timestamp</PropertyName>
+              </ListItem>
+              <ListItem>
+                <Label>OperationName</Label>
+                <PropertyName>OperationName</PropertyName>
+              </ListItem>
+              <ListItem>
+                <Label>OperationId</Label>
+                <PropertyName>OperationId</PropertyName>
+              </ListItem>
+              <ListItem>
+                <Label>Status</Label>
+                <PropertyName>Status</PropertyName>
+              </ListItem>
+              <ListItem>
+                <Label>SubStatus</Label>
+                <PropertyName>SubStatus</PropertyName>
+              </ListItem>
+              <ListItem>
+                <Label>Caller</Label>
+                <PropertyName>Caller</PropertyName>
+              </ListItem>
+              <ListItem>
+                <Label>CorrelationId</Label>
+                <PropertyName>CorrelationId</PropertyName>
+              </ListItem>
+              <ListItem>
+                <Label>Description</Label>
+                <PropertyName>Description</PropertyName>
+              </ListItem>
+              <ListItem>
+                <Label>HttpRequest</Label>
+                <PropertyName>HttpRequest</PropertyName>
+              </ListItem>
+              <ListItem>
+                <Label>Level</Label>
+                <PropertyName>Level</PropertyName>
+              </ListItem>
+              <ListItem>
+                <Label>ResourceGroupName</Label>
+                <PropertyName>ResourceGroupName</PropertyName>
+              </ListItem>
+              <ListItem>
+                <Label>ResourceProvider</Label>
+                <PropertyName>ResourceProvider</PropertyName>
+              </ListItem>
+              <ListItem>
+                <Label>EventSource</Label>
+                <PropertyName>EventSource</PropertyName>
+              </ListItem>
+              <ListItem>
+                <Label>Properties</Label>
+                <PropertyName>PropertiesText</PropertyName>
+              </ListItem>
+            </ListItems>
+          </ListEntry>
+        </ListEntries>
+      </ListControl>
+    </View>
+    <View>
+      <Name>Microsoft.Azure.Commands.Resources.Models.PSGalleryItem</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.Commands.Resources.Models.PSGalleryItem</TypeName>
+      </ViewSelectedBy>
+      <ListControl>
+        <ListEntries>
+          <ListEntry>
+            <ListItems>
+              <ListItem>
+                <Label>Identity</Label>
+                <PropertyName>Identity</PropertyName>
+              </ListItem>
+              <ListItem>
+                <Label>Publisher</Label>
+                <PropertyName>Publisher</PropertyName>
+              </ListItem>
+              <ListItem>
+                <Label>Name</Label>
+                <PropertyName>Name</PropertyName>
+              </ListItem>
+              <ListItem>
+                <Label>Version</Label>
+                <PropertyName>Version</PropertyName>
+              </ListItem>
+              <ListItem>
+                <Label>CategoryIds</Label>
+                <PropertyName>CategoryIds</PropertyName>
+              </ListItem>
+              <ListItem>
+                <Label>PublisherDisplayName</Label>
+                <PropertyName>PublisherDisplayName</PropertyName>
+              </ListItem>
+              <ListItem>
+                <Label>DisplayName</Label>
+                <PropertyName>DisplayName</PropertyName>
+              </ListItem>
+              <ListItem>
+                <Label>DefinitionTemplates</Label>
+                <PropertyName>DefinitionTemplatesText</PropertyName>
+              </ListItem>
+              <ListItem>
+                <Label>Summary</Label>
+                <PropertyName>Summary</PropertyName>
+              </ListItem>
+              <ListItem>
+                <Label>Description</Label>
+                <PropertyName>Description</PropertyName>
+              </ListItem>
+            </ListItems>
+          </ListEntry>
+        </ListEntries>
+      </ListControl>
+    </View>
+        <View>
+      <Name>Microsoft.Azure.Commands.Resources.Models.ManagementGroups.PSManagementGroup</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.Commands.Resources.Models.ManagementGroups.PSManagementGroup</TypeName>
+      </ViewSelectedBy>
+      <ListControl>
+        <ListEntries>
+          <ListEntry>
+            <ListItems>
+              <ListItem>
+                <Label>Id</Label>
+                <PropertyName>Id</PropertyName>
+              </ListItem>
+              <ListItem>
+                <Label>Type</Label>
+                <PropertyName>Type</PropertyName>
+              </ListItem>
+              <ListItem>
+                <Label>Name</Label>
+                <PropertyName>Name</PropertyName>
+              </ListItem>
+              <ListItem>
+                <Label>TenantId</Label>
+                <PropertyName>TenantId</PropertyName>
+              </ListItem>
+              <ListItem>
+                <Label>DisplayName</Label>
+                <PropertyName>DisplayName</PropertyName>
+              </ListItem>
+              <ListItem>
+                <Label>UpdatedTime</Label>
+                <PropertyName>UpdatedTime</PropertyName>
+              </ListItem>
+              <ListItem>
+                <Label>UpdatedBy</Label>
+                <PropertyName>UpdatedBy</PropertyName>
+              </ListItem>
+              <ListItem>
+                <Label>ParentId</Label>
+                <PropertyName>ParentId</PropertyName>
+              </ListItem>
+              <ListItem>
+                <Label>ParentName</Label>
+                <PropertyName>ParentName</PropertyName>
+              </ListItem>
+              <ListItem>
+                <Label>ParentDisplayName</Label>
+                <PropertyName>ParentDisplayName</PropertyName>
+              </ListItem>
+              <ListItem>
+                <ItemSelectionCondition><ScriptBlock>$_.Children -ne $null</ScriptBlock></ItemSelectionCondition>
+                <Label>Children</Label>
+                <ScriptBlock>$displayNames=@(); foreach ($child in $_.Children){$displayNames+=$child.DisplayName}; $displayNames</ScriptBlock>
+              </ListItem>
+            </ListItems>
+          </ListEntry>
+        </ListEntries>
+      </ListControl>
+    </View>
+    <View>
+      <Name>Microsoft.Azure.Commands.Resources.Models.ManagementGroups.PSManagementGroupChildInfo</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.Commands.Resources.Models.ManagementGroups.PSManagementGroupChildInfo</TypeName>
+      </ViewSelectedBy>
+      <ListControl>
+        <ListEntries>
+          <ListEntry>
+            <ListItems>
+              <ListItem>
+                <Label>Type</Label>
+                <PropertyName>Type</PropertyName>
+              </ListItem>
+              <ListItem>
+                <Label>Id</Label>
+                <PropertyName>Id</PropertyName>
+              </ListItem>
+              <ListItem>
+                <Label>Name</Label>
+                <PropertyName>Name</PropertyName>
+              </ListItem>
+              <ListItem>
+                <Label>DisplayName</Label>
+                <PropertyName>DisplayName</PropertyName>
+              </ListItem>
+              <ListItem>
+                <ItemSelectionCondition><ScriptBlock>$_.Children -ne $null</ScriptBlock></ItemSelectionCondition>
+                <Label>Children</Label>
+                <ScriptBlock>$displayNames=@(); foreach ($child in $_.Children){$displayNames+=$child.DisplayName}; $displayNames</ScriptBlock>
+              </ListItem>
+            </ListItems>
+          </ListEntry>
+        </ListEntries>
+      </ListControl>
+    </View>
+    <View>
+      <Name>Microsoft.Azure.Commands.Resources.Models.ManagementGroups.PSManagementGroupInfo</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.Commands.Resources.Models.ManagementGroups.PSManagementGroupInfo</TypeName>
+      </ViewSelectedBy>
+      <ListControl>
+        <ListEntries>
+          <ListEntry>
+            <ListItems>
+              <ListItem>
+                <Label>Id</Label>
+                <PropertyName>Id</PropertyName>
+              </ListItem>
+              <ListItem>
+                <Label>Type</Label>
+                <PropertyName>Type</PropertyName>
+              </ListItem>
+              <ListItem>
+                <Label>Name</Label>
+                <PropertyName>Name</PropertyName>
+              </ListItem>
+              <ListItem>
+                <Label>TenantId</Label>
+                <PropertyName>TenantId</PropertyName>
+              </ListItem>
+              <ListItem>
+                <Label>DisplayName</Label>
+                <PropertyName>DisplayName</PropertyName>
+              </ListItem>
+            </ListItems>
+          </ListEntry>
+        </ListEntries>
+      </ListControl>
+    </View>
+    <View>
+      <Name>Microsoft.Azure.Commands.ResourceManager.Cmdlets.SdkModels.PSTemplateSpecListItem</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.Commands.ResourceManager.Cmdlets.SdkModels.PSTemplateSpecListItem</TypeName>
+      </ViewSelectedBy>
+      <TableControl>
+        <TableHeaders>
+          <TableColumnHeader>
+            <Label>ResourceGroupName</Label>
+            <Alignment>Left</Alignment>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>Name</Label>
+            <Alignment>Right</Alignment>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>Location</Label>
+            <Alignment>Right</Alignment>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>LastModified(UTC)</Label>
+            <Alignment>Left</Alignment>
+          </TableColumnHeader>
+        </TableHeaders>
+        <TableRowEntries>
+          <TableRowEntry>
+            <TableColumnItems>
+              <TableColumnItem>
+                <ScriptBlock>$_.ResourceGroupName</ScriptBlock>
+              </TableColumnItem>
+              <TableColumnItem>
+                <ScriptBlock>$_.Name</ScriptBlock>
+              </TableColumnItem>
+              <TableColumnItem>
+                <ScriptBlock>$_.Location.ToLowerInvariant().Replace(" ", "")</ScriptBlock>
+              </TableColumnItem>
+              <TableColumnItem>
+                <ScriptBlock>$_.LastModifiedTime</ScriptBlock>
+              </TableColumnItem>
+            </TableColumnItems>
+          </TableRowEntry>
+        </TableRowEntries>
+      </TableControl>
+    </View>
+    <View>
+      <Name>Microsoft.Azure.Commands.ResourceManager.Cmdlets.SdkModels.PSTemplateSpec</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.Commands.ResourceManager.Cmdlets.SdkModels.PSTemplateSpec</TypeName>
+      </ViewSelectedBy>
+      <ListControl>
+        <ListEntries>
+          <ListEntry>
+            <ListItems>
+              <ListItem>
+                <Label>Id</Label>
+                <PropertyName>Id</PropertyName>
+              </ListItem>
+              <ListItem>
+                <Label>Name</Label>
+                <PropertyName>Name</PropertyName>
+              </ListItem>
+              <ListItem>
+                <Label>DisplayName</Label>
+                <ItemSelectionCondition>
+                  <ScriptBlock>$_.DisplayName -ne $null</ScriptBlock>
+                </ItemSelectionCondition>
+                <ScriptBlock>$_.DisplayName</ScriptBlock>
+              </ListItem>
+              <ListItem>
+                <Label>ResourceGroupName</Label>
+                <PropertyName>ResourceGroupName</PropertyName>
+              </ListItem>
+              <ListItem>
+                <Label>SubscriptionId</Label>
+                <PropertyName>SubscriptionId</PropertyName>
+              </ListItem>
+              <ListItem>
+                <Label>Location</Label>
+                <ScriptBlock>$_.Location.ToLowerInvariant().Replace(" ", "")</ScriptBlock>
+              </ListItem>
+              <ListItem>
+                <Label>Tags</Label>
+                <ItemSelectionCondition>
+                  <ScriptBlock>$_.Tags -ne $null -and $_.Tags.Count -gt 0</ScriptBlock>
+                </ItemSelectionCondition>
+                <ScriptBlock>$_.Tags</ScriptBlock>
+              </ListItem>
+              <ListItem>
+                <Label>Description</Label>
+                <ItemSelectionCondition>
+                  <ScriptBlock>$_.Description -ne $null</ScriptBlock>
+                </ItemSelectionCondition>
+                <ScriptBlock>$_.Description</ScriptBlock>
+              </ListItem>
+              <ListItem>
+                <Label>Versions</Label>
+                <ItemSelectionCondition>
+                  <ScriptBlock>$_.Versions -ne $null</ScriptBlock>
+                </ItemSelectionCondition>
+                <ScriptBlock>$versionNames=@(); foreach ($version in $_.Versions){$versionNames+=$version.Name}; $versionNames</ScriptBlock>
+              </ListItem>
+              <ListItem>
+                <Label>CreationTime(UTC)</Label>
+                <PropertyName>CreationTime</PropertyName>
+              </ListItem>
+              <ListItem>
+                <Label>LastModifiedTime(UTC)</Label>
+                <PropertyName>LastModifiedTime</PropertyName>
+              </ListItem>
+            </ListItems>
+          </ListEntry>
+        </ListEntries>
+      </ListControl>
+    </View>
+    <View>
+      <Name>Microsoft.Azure.Commands.ResourceManager.Cmdlets.SdkModels.PSTemplateSpecVersion</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.Commands.ResourceManager.Cmdlets.SdkModels.PSTemplateSpecVersion</TypeName>
+      </ViewSelectedBy>
+      <ListControl>
+        <ListEntries>
+          <ListEntry>
+            <ListItems>
+              <ListItem>
+                <Label>Id</Label>
+                <PropertyName>Id</PropertyName>
+              </ListItem>
+              <ListItem>
+                <Label>Name</Label>
+                <PropertyName>Name</PropertyName>
+              </ListItem>
+              <ListItem>
+                <Label>Tags</Label>
+                <ItemSelectionCondition>
+                  <ScriptBlock>$_.Tags -ne $null -and $_.Tags.Count -gt 0</ScriptBlock>
+                </ItemSelectionCondition>
+                <ScriptBlock>$_.Tags</ScriptBlock>
+              </ListItem>
+              <ListItem>
+                <Label>Description</Label>
+                <ItemSelectionCondition>
+                  <ScriptBlock>$_.Description -ne $null</ScriptBlock>
+                </ItemSelectionCondition>
+                <ScriptBlock>$_.Description</ScriptBlock>
+              </ListItem>
+              <ListItem>
+                <Label>LinkedTemplates</Label>
+                <ItemSelectionCondition>
+                  <ScriptBlock>$_.LinkedTemplates -ne $null -and $_.LinkedTemplates.Count -gt 0</ScriptBlock>
+                </ItemSelectionCondition>
+                <ScriptBlock>$linkedTemplateArtifactPaths=@(); foreach ($linkedTemplateArtifact in $_.LinkedTemplates){$linkedTemplateArtifactPaths+="'$($linkedTemplateArtifact.Path)'"}; $linkedTemplateArtifactPaths</ScriptBlock>
+              </ListItem>
+              <ListItem>
+                <Label>CreationTime(UTC)</Label>
+                <PropertyName>CreationTime</PropertyName>
+              </ListItem>
+              <ListItem>
+                <Label>LastModifiedTime(UTC)</Label>
+                <PropertyName>LastModifiedTime</PropertyName>
+              </ListItem>
+              <ListItem>
+                <Label>MainTemplate</Label>
+                <PropertyName>MainTemplate</PropertyName>
+              </ListItem>
+            </ListItems>
+          </ListEntry>
+        </ListEntries>
+      </ListControl>
+    </View>
+    <View>
+      <Name>Microsoft.Azure.Commands.ResourceManager.Cmdlets.SdkModels.PSTemplateSpecTemplateArtifact</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.Commands.ResourceManager.Cmdlets.SdkModels.PSTemplateSpecTemplateArtifact</TypeName>
+      </ViewSelectedBy>
+      <ListControl>
+        <ListEntries>
+          <ListEntry>
+            <ListItems>
+              <ListItem>
+                <Label>Path</Label>
+                <PropertyName>Path</PropertyName>
+              </ListItem>
+              <ListItem>
+                <Label>Template</Label>
+                <PropertyName>Template</PropertyName>
+              </ListItem>
+            </ListItems>
+          </ListEntry>
+        </ListEntries>
+      </ListControl>
+    </View>
+	  <View>
+		  <Name>Microsoft.Azure.Commands.ResourceManager.Cmdlets.SdkModels.PSDeploymentStack</Name>
+		  <ViewSelectedBy>
+			  <TypeName>Microsoft.Azure.Commands.ResourceManager.Cmdlets.SdkModels.PSDeploymentStack</TypeName>
+		  </ViewSelectedBy>
+		  <ListControl>
+			  <ListEntries>
+				  <ListEntry>
+					  <ListItems>
+						  <ListItem>
+							  <Label>Id</Label>
+							  <PropertyName>id</PropertyName>
+						  </ListItem>
+						  <ListItem>
+							  <Label>Name</Label>
+							  <PropertyName>name</PropertyName>
+						  </ListItem>
+              <ListItem>
+                <Label>ProvisioningState</Label>
+                <PropertyName>provisioningState</PropertyName>
+              </ListItem>
+						  <ListItem>
+							  <Label>ResourcesCleanupAction</Label>
+                <PropertyName>resourcesCleanupAction</PropertyName>
+						  </ListItem>
+              <ListItem>
+                <Label>ResourceGroupsCleanupAction</Label>
+                <PropertyName>resourceGroupsCleanupAction</PropertyName>
+              </ListItem>
+              <ListItem>
+                <Label>DenySettingsMode</Label>
+                <ItemSelectionCondition>
+                  <ScriptBlock>$_.DenySettings -ne $null -And $_.  DenySettings.Mode -ne $null</ScriptBlock>
+                </ItemSelectionCondition>
+                <ScriptBlock>$_.DenySettings.Mode</ScriptBlock>
+              </ListItem>
+						  <ListItem>
+							  <Label>Location</Label>
+							  <ItemSelectionCondition>
+								  <ScriptBlock>$_.Location -ne $null</ScriptBlock>
+							  </ItemSelectionCondition>
+							  <ScriptBlock>$_.Location</ScriptBlock>
+						  </ListItem>
+						  <ListItem>
+							  <Label>Description</Label>
+							  <ItemSelectionCondition>
+								  <ScriptBlock>$_.Description -ne $null</ScriptBlock>
+							  </ItemSelectionCondition>
+							  <ScriptBlock>$_.Description</ScriptBlock>
+						  </ListItem>
+						  <ListItem>
+							  <Label>CreationTime(UTC)</Label>
+							  <ItemSelectionCondition>
+								  <ScriptBlock>$_.SystemData -ne $null</ScriptBlock>
+							  </ItemSelectionCondition>
+							  <ScriptBlock>$_.SystemData.createdAt</ScriptBlock>
+						  </ListItem>
+						  <ListItem>
+							  <Label>DeploymentId</Label>
+							  <ItemSelectionCondition>
+								  <ScriptBlock>$_.deploymentId -ne $null</ScriptBlock>
+							  </ItemSelectionCondition>
+							  <ScriptBlock>$_.deploymentId</ScriptBlock>
+						  </ListItem>
+              <ListItem>
+                <Label>Resources</Label>
+                <ItemSelectionCondition>
+                  <ScriptBlock>$_.resources -ne $null</ScriptBlock>
+                </ItemSelectionCondition>
+                <ScriptBlock>$s = ""; Foreach($item in $_.resources) { $n = ""; if ($s -ne "") { $n = "`n"; } $s = $s + $n + $item.id; } $s;</ScriptBlock>
+              </ListItem>
+              <ListItem>
+                <Label>DetachedResources</Label>
+                <ItemSelectionCondition>
+                  <ScriptBlock>$_.detachedResources -ne $null</ScriptBlock>
+                </ItemSelectionCondition>
+                <ScriptBlock>$s = ""; Foreach($item in $_.detachedResources) { $n = ""; if ($s -ne "") { $n = "`n"; } $s = $s + $n + $item.id; } $s;</ScriptBlock>
+              </ListItem>
+              <ListItem>
+                <Label>DeletedResources</Label>
+                <ItemSelectionCondition>
+                  <ScriptBlock>$_.deletedResources -ne $null</ScriptBlock>
+                </ItemSelectionCondition>
+                <ScriptBlock>$s = ""; Foreach($item in $_.deletedResources) { $n = ""; if ($s -ne "") { $n = "`n"; } $s = $s + $n + $item.id; } $s;</ScriptBlock>
+              </ListItem>
+              <ListItem>
+                <Label>FailedResources</Label>
+                <ItemSelectionCondition>
+                  <ScriptBlock>$_.failedResources -ne $null</ScriptBlock>
+                </ItemSelectionCondition>
+                <ScriptBlock>$s = ""; Foreach($item in $_.failedResources) { $n = ""; if ($s -ne "") { $n = ",`n"; } $s = $s + $n + "{`n`tid: " +  $item.id + "`n`terror: " + $item.error.message + "`n}"} $s;</ScriptBlock>
+              </ListItem>
+              <ListItem>
+                <Label>Error</Label>
+                <ItemSelectionCondition>
+                  <ScriptBlock>$_.error -ne $null</ScriptBlock>
+                </ItemSelectionCondition>
+                <ScriptBlock>$_.GetFormattedErrorString()</ScriptBlock>
+              </ListItem>
+              <ListItem>
+                <Label>Tags</Label>
+                <ItemSelectionCondition>
+                  <ScriptBlock>$_.Tags -ne $null -And $_.Tags.Keys.Count -ne 0</ScriptBlock>
+                </ItemSelectionCondition>
+                <ScriptBlock>$_.GetFormattedTagTable()</ScriptBlock>
+              </ListItem>
+              <ListItem>
+                <Label>Parameters</Label>
+                <ItemSelectionCondition>
+                  <ScriptBlock>$_.Parameters -ne $null -And $_.Parameters.Keys.Count -ne 0</ScriptBlock>
+                </ItemSelectionCondition>
+                <ScriptBlock>$_.GetFormattedParameterTable()</ScriptBlock>
+              </ListItem>
+              <ListItem>
+                <Label>Outputs</Label>
+                <ItemSelectionCondition>
+                  <ScriptBlock>$_.Outputs -ne $null -And $_.Outputs.Keys.Count -ne 0</ScriptBlock>
+                </ItemSelectionCondition>
+                <ScriptBlock>$_.GetFormattedOutputTable()</ScriptBlock>
+              </ListItem>
+					  </ListItems>
+				  </ListEntry>
+			  </ListEntries>
+		  </ListControl>
+	  </View>
+    <View>
+      <Name>Microsoft.Azure.Commands.ResourceManager.Cmdlets.SdkModels.PSDeploymentStackTemplateDefinition</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.Commands.ResourceManager.Cmdlets.SdkModels.PSDeploymentStackTemplateDefinition</TypeName>
+      </ViewSelectedBy>
+      <ListControl>
+        <ListEntries>
+          <ListEntry>
+            <ListItems>
+              <ListItem>
+                <Label>Template</Label>
+                <ItemSelectionCondition>
+                  <ScriptBlock>$_.template -ne $null</ScriptBlock>
+                </ItemSelectionCondition>
+                <ScriptBlock>$_.template</ScriptBlock>
+              </ListItem>
+              <ListItem>
+                <Label>TemplateLink</Label>
+                <ItemSelectionCondition>
+                  <ScriptBlock>$_.templatelink -ne $null</ScriptBlock>
+                </ItemSelectionCondition>
+                <ScriptBlock>ConvertTo-Json $_.templatelink</ScriptBlock>
+              </ListItem>
+            </ListItems>
+          </ListEntry>
+        </ListEntries>
+      </ListControl>
+    </View>
+    <View>
+      <Name>Microsoft.Azure.Commands.ResourceManager.Cmdlets.SdkModels.PSDeploymentStackTemplateLink</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.Commands.ResourceManager.Cmdlets.SdkModels.PSDeploymentStackTemplateLink</TypeName>
+      </ViewSelectedBy>
+      <ListControl>
+        <ListEntries>
+          <ListEntry>
+            <ListItems>
+              <ListItem>
+                <Label>Id</Label>
+                <ItemSelectionCondition>
+                  <ScriptBlock>$_.Id -ne $null</ScriptBlock>
+                </ItemSelectionCondition>
+                <ScriptBlock>$_.Id</ScriptBlock>
+              </ListItem>
+              <ListItem>
+                <Label>Uri</Label>
+                <ItemSelectionCondition>
+                  <ScriptBlock>$_.Uri -ne $null</ScriptBlock>
+                </ItemSelectionCondition>
+                <ScriptBlock>$_.Uri</ScriptBlock>
+              </ListItem>
+              <ListItem>
+                <Label>ContentVersion</Label>
+                <ItemSelectionCondition>
+                  <ScriptBlock>$_.ContentVersion -ne $null</ScriptBlock>
+                </ItemSelectionCondition>
+                <ScriptBlock>$_.ContentVersion</ScriptBlock>
+              </ListItem>
+              <ListItem>
+                <Label>RelativePath</Label>
+                <ItemSelectionCondition>
+                  <ScriptBlock>$_.RelativePath -ne $null</ScriptBlock>
+                </ItemSelectionCondition>
+                <ScriptBlock>$_.RelativePath</ScriptBlock>
+              </ListItem>
+              <ListItem>
+                <Label>QueryString</Label>
+                <ItemSelectionCondition>
+                  <ScriptBlock>$_.QueryString -ne $null</ScriptBlock>
+                </ItemSelectionCondition>
+                <ScriptBlock>$_.QueryString</ScriptBlock>
+              </ListItem>
+            </ListItems>
+          </ListEntry>
+        </ListEntries>
+      </ListControl>
+    </View>
+  </ViewDefinitions>
+</Configuration>
+
+<!-- SIG # Begin signature block -->
+<!-- MIInvwYJKoZIhvcNAQcCoIInsDCCJ6wCAQExDzANBglghkgBZQMEAgEFADB5Bgor -->
+<!-- BgEEAYI3AgEEoGswaTA0BgorBgEEAYI3AgEeMCYCAwEAAAQQH8w7YFlLCE63JNLG -->
+<!-- KX7zUQIBAAIBAAIBAAIBAAIBADAxMA0GCWCGSAFlAwQCAQUABCAY/vR/D7mfGZ6W -->
+<!-- Rhg3M8xVG1QVIBSArAf/dTCeU44w6qCCDXYwggX0MIID3KADAgECAhMzAAADTrU8 -->
+<!-- esGEb+srAAAAAANOMA0GCSqGSIb3DQEBCwUAMH4xCzAJBgNVBAYTAlVTMRMwEQYD -->
+<!-- VQQIEwpXYXNoaW5ndG9uMRAwDgYDVQQHEwdSZWRtb25kMR4wHAYDVQQKExVNaWNy -->
+<!-- b3NvZnQgQ29ycG9yYXRpb24xKDAmBgNVBAMTH01pY3Jvc29mdCBDb2RlIFNpZ25p -->
+<!-- bmcgUENBIDIwMTEwHhcNMjMwMzE2MTg0MzI5WhcNMjQwMzE0MTg0MzI5WjB0MQsw -->
+<!-- CQYDVQQGEwJVUzETMBEGA1UECBMKV2FzaGluZ3RvbjEQMA4GA1UEBxMHUmVkbW9u -->
+<!-- ZDEeMBwGA1UEChMVTWljcm9zb2Z0IENvcnBvcmF0aW9uMR4wHAYDVQQDExVNaWNy -->
+<!-- b3NvZnQgQ29ycG9yYXRpb24wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIB -->
+<!-- AQDdCKiNI6IBFWuvJUmf6WdOJqZmIwYs5G7AJD5UbcL6tsC+EBPDbr36pFGo1bsU -->
+<!-- p53nRyFYnncoMg8FK0d8jLlw0lgexDDr7gicf2zOBFWqfv/nSLwzJFNP5W03DF/1 -->
+<!-- 1oZ12rSFqGlm+O46cRjTDFBpMRCZZGddZlRBjivby0eI1VgTD1TvAdfBYQe82fhm -->
+<!-- WQkYR/lWmAK+vW/1+bO7jHaxXTNCxLIBW07F8PBjUcwFxxyfbe2mHB4h1L4U0Ofa -->
+<!-- +HX/aREQ7SqYZz59sXM2ySOfvYyIjnqSO80NGBaz5DvzIG88J0+BNhOu2jl6Dfcq -->
+<!-- jYQs1H/PMSQIK6E7lXDXSpXzAgMBAAGjggFzMIIBbzAfBgNVHSUEGDAWBgorBgEE -->
+<!-- AYI3TAgBBggrBgEFBQcDAzAdBgNVHQ4EFgQUnMc7Zn/ukKBsBiWkwdNfsN5pdwAw -->
+<!-- RQYDVR0RBD4wPKQ6MDgxHjAcBgNVBAsTFU1pY3Jvc29mdCBDb3Jwb3JhdGlvbjEW -->
+<!-- MBQGA1UEBRMNMjMwMDEyKzUwMDUxNjAfBgNVHSMEGDAWgBRIbmTlUAXTgqoXNzci -->
+<!-- tW2oynUClTBUBgNVHR8ETTBLMEmgR6BFhkNodHRwOi8vd3d3Lm1pY3Jvc29mdC5j -->
+<!-- b20vcGtpb3BzL2NybC9NaWNDb2RTaWdQQ0EyMDExXzIwMTEtMDctMDguY3JsMGEG -->
+<!-- CCsGAQUFBwEBBFUwUzBRBggrBgEFBQcwAoZFaHR0cDovL3d3dy5taWNyb3NvZnQu -->
+<!-- Y29tL3BraW9wcy9jZXJ0cy9NaWNDb2RTaWdQQ0EyMDExXzIwMTEtMDctMDguY3J0 -->
+<!-- MAwGA1UdEwEB/wQCMAAwDQYJKoZIhvcNAQELBQADggIBAD21v9pHoLdBSNlFAjmk -->
+<!-- mx4XxOZAPsVxxXbDyQv1+kGDe9XpgBnT1lXnx7JDpFMKBwAyIwdInmvhK9pGBa31 -->
+<!-- TyeL3p7R2s0L8SABPPRJHAEk4NHpBXxHjm4TKjezAbSqqbgsy10Y7KApy+9UrKa2 -->
+<!-- kGmsuASsk95PVm5vem7OmTs42vm0BJUU+JPQLg8Y/sdj3TtSfLYYZAaJwTAIgi7d -->
+<!-- hzn5hatLo7Dhz+4T+MrFd+6LUa2U3zr97QwzDthx+RP9/RZnur4inzSQsG5DCVIM -->
+<!-- pA1l2NWEA3KAca0tI2l6hQNYsaKL1kefdfHCrPxEry8onJjyGGv9YKoLv6AOO7Oh -->
+<!-- JEmbQlz/xksYG2N/JSOJ+QqYpGTEuYFYVWain7He6jgb41JbpOGKDdE/b+V2q/gX -->
+<!-- UgFe2gdwTpCDsvh8SMRoq1/BNXcr7iTAU38Vgr83iVtPYmFhZOVM0ULp/kKTVoir -->
+<!-- IpP2KCxT4OekOctt8grYnhJ16QMjmMv5o53hjNFXOxigkQWYzUO+6w50g0FAeFa8 -->
+<!-- 5ugCCB6lXEk21FFB1FdIHpjSQf+LP/W2OV/HfhC3uTPgKbRtXo83TZYEudooyZ/A -->
+<!-- Vu08sibZ3MkGOJORLERNwKm2G7oqdOv4Qj8Z0JrGgMzj46NFKAxkLSpE5oHQYP1H -->
+<!-- tPx1lPfD7iNSbJsP6LiUHXH1MIIHejCCBWKgAwIBAgIKYQ6Q0gAAAAAAAzANBgkq -->
+<!-- hkiG9w0BAQsFADCBiDELMAkGA1UEBhMCVVMxEzARBgNVBAgTCldhc2hpbmd0b24x -->
+<!-- EDAOBgNVBAcTB1JlZG1vbmQxHjAcBgNVBAoTFU1pY3Jvc29mdCBDb3Jwb3JhdGlv -->
+<!-- bjEyMDAGA1UEAxMpTWljcm9zb2Z0IFJvb3QgQ2VydGlmaWNhdGUgQXV0aG9yaXR5 -->
+<!-- IDIwMTEwHhcNMTEwNzA4MjA1OTA5WhcNMjYwNzA4MjEwOTA5WjB+MQswCQYDVQQG -->
+<!-- EwJVUzETMBEGA1UECBMKV2FzaGluZ3RvbjEQMA4GA1UEBxMHUmVkbW9uZDEeMBwG -->
+<!-- A1UEChMVTWljcm9zb2Z0IENvcnBvcmF0aW9uMSgwJgYDVQQDEx9NaWNyb3NvZnQg -->
+<!-- Q29kZSBTaWduaW5nIFBDQSAyMDExMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIIC -->
+<!-- CgKCAgEAq/D6chAcLq3YbqqCEE00uvK2WCGfQhsqa+laUKq4BjgaBEm6f8MMHt03 -->
+<!-- a8YS2AvwOMKZBrDIOdUBFDFC04kNeWSHfpRgJGyvnkmc6Whe0t+bU7IKLMOv2akr -->
+<!-- rnoJr9eWWcpgGgXpZnboMlImEi/nqwhQz7NEt13YxC4Ddato88tt8zpcoRb0Rrrg -->
+<!-- OGSsbmQ1eKagYw8t00CT+OPeBw3VXHmlSSnnDb6gE3e+lD3v++MrWhAfTVYoonpy -->
+<!-- 4BI6t0le2O3tQ5GD2Xuye4Yb2T6xjF3oiU+EGvKhL1nkkDstrjNYxbc+/jLTswM9 -->
+<!-- sbKvkjh+0p2ALPVOVpEhNSXDOW5kf1O6nA+tGSOEy/S6A4aN91/w0FK/jJSHvMAh -->
+<!-- dCVfGCi2zCcoOCWYOUo2z3yxkq4cI6epZuxhH2rhKEmdX4jiJV3TIUs+UsS1Vz8k -->
+<!-- A/DRelsv1SPjcF0PUUZ3s/gA4bysAoJf28AVs70b1FVL5zmhD+kjSbwYuER8ReTB -->
+<!-- w3J64HLnJN+/RpnF78IcV9uDjexNSTCnq47f7Fufr/zdsGbiwZeBe+3W7UvnSSmn -->
+<!-- Eyimp31ngOaKYnhfsi+E11ecXL93KCjx7W3DKI8sj0A3T8HhhUSJxAlMxdSlQy90 -->
+<!-- lfdu+HggWCwTXWCVmj5PM4TasIgX3p5O9JawvEagbJjS4NaIjAsCAwEAAaOCAe0w -->
+<!-- ggHpMBAGCSsGAQQBgjcVAQQDAgEAMB0GA1UdDgQWBBRIbmTlUAXTgqoXNzcitW2o -->
+<!-- ynUClTAZBgkrBgEEAYI3FAIEDB4KAFMAdQBiAEMAQTALBgNVHQ8EBAMCAYYwDwYD -->
+<!-- VR0TAQH/BAUwAwEB/zAfBgNVHSMEGDAWgBRyLToCMZBDuRQFTuHqp8cx0SOJNDBa -->
+<!-- BgNVHR8EUzBRME+gTaBLhklodHRwOi8vY3JsLm1pY3Jvc29mdC5jb20vcGtpL2Ny -->
+<!-- bC9wcm9kdWN0cy9NaWNSb29DZXJBdXQyMDExXzIwMTFfMDNfMjIuY3JsMF4GCCsG -->
+<!-- AQUFBwEBBFIwUDBOBggrBgEFBQcwAoZCaHR0cDovL3d3dy5taWNyb3NvZnQuY29t -->
+<!-- L3BraS9jZXJ0cy9NaWNSb29DZXJBdXQyMDExXzIwMTFfMDNfMjIuY3J0MIGfBgNV -->
+<!-- HSAEgZcwgZQwgZEGCSsGAQQBgjcuAzCBgzA/BggrBgEFBQcCARYzaHR0cDovL3d3 -->
+<!-- dy5taWNyb3NvZnQuY29tL3BraW9wcy9kb2NzL3ByaW1hcnljcHMuaHRtMEAGCCsG -->
+<!-- AQUFBwICMDQeMiAdAEwAZQBnAGEAbABfAHAAbwBsAGkAYwB5AF8AcwB0AGEAdABl -->
+<!-- AG0AZQBuAHQALiAdMA0GCSqGSIb3DQEBCwUAA4ICAQBn8oalmOBUeRou09h0ZyKb -->
+<!-- C5YR4WOSmUKWfdJ5DJDBZV8uLD74w3LRbYP+vj/oCso7v0epo/Np22O/IjWll11l -->
+<!-- hJB9i0ZQVdgMknzSGksc8zxCi1LQsP1r4z4HLimb5j0bpdS1HXeUOeLpZMlEPXh6 -->
+<!-- I/MTfaaQdION9MsmAkYqwooQu6SpBQyb7Wj6aC6VoCo/KmtYSWMfCWluWpiW5IP0 -->
+<!-- wI/zRive/DvQvTXvbiWu5a8n7dDd8w6vmSiXmE0OPQvyCInWH8MyGOLwxS3OW560 -->
+<!-- STkKxgrCxq2u5bLZ2xWIUUVYODJxJxp/sfQn+N4sOiBpmLJZiWhub6e3dMNABQam -->
+<!-- ASooPoI/E01mC8CzTfXhj38cbxV9Rad25UAqZaPDXVJihsMdYzaXht/a8/jyFqGa -->
+<!-- J+HNpZfQ7l1jQeNbB5yHPgZ3BtEGsXUfFL5hYbXw3MYbBL7fQccOKO7eZS/sl/ah -->
+<!-- XJbYANahRr1Z85elCUtIEJmAH9AAKcWxm6U/RXceNcbSoqKfenoi+kiVH6v7RyOA -->
+<!-- 9Z74v2u3S5fi63V4GuzqN5l5GEv/1rMjaHXmr/r8i+sLgOppO6/8MO0ETI7f33Vt -->
+<!-- Y5E90Z1WTk+/gFcioXgRMiF670EKsT/7qMykXcGhiJtXcVZOSEXAQsmbdlsKgEhr -->
+<!-- /Xmfwb1tbWrJUnMTDXpQzTGCGZ8wghmbAgEBMIGVMH4xCzAJBgNVBAYTAlVTMRMw -->
+<!-- EQYDVQQIEwpXYXNoaW5ndG9uMRAwDgYDVQQHEwdSZWRtb25kMR4wHAYDVQQKExVN -->
+<!-- aWNyb3NvZnQgQ29ycG9yYXRpb24xKDAmBgNVBAMTH01pY3Jvc29mdCBDb2RlIFNp -->
+<!-- Z25pbmcgUENBIDIwMTECEzMAAANOtTx6wYRv6ysAAAAAA04wDQYJYIZIAWUDBAIB -->
+<!-- BQCgga4wGQYJKoZIhvcNAQkDMQwGCisGAQQBgjcCAQQwHAYKKwYBBAGCNwIBCzEO -->
+<!-- MAwGCisGAQQBgjcCARUwLwYJKoZIhvcNAQkEMSIEIHkNlq9wSECCMat2VRy8Igi5 -->
+<!-- mKLQe9njdN2o7b6sf/zxMEIGCisGAQQBgjcCAQwxNDAyoBSAEgBNAGkAYwByAG8A -->
+<!-- cwBvAGYAdKEagBhodHRwOi8vd3d3Lm1pY3Jvc29mdC5jb20wDQYJKoZIhvcNAQEB -->
+<!-- BQAEggEAB/HhchwCgBcfXCqfWT53FYluxHQBxKe6WESpjb+Iuat6j4bbiR8FWgij -->
+<!-- P8qEloKP/6CZhYWoUc/DX99MdjnjXSpwtHI6dP5g/nbuJwVCaer4g/yELM9WRfOb -->
+<!-- Ld3GOQn8eMnF8/+FGFy4ZBohAln/3iZ5tZfBiboLaxzPMe2MfzrnnSJHGFYiEXIy -->
+<!-- cHcIuc6CVPP5YOZkNWIhh893cgTgWAuwdAO5nOb4ym+Q/t1YzWJWb8Kse3uy1PFW -->
+<!-- SwOZl/+RWb5kS+yUGZOLzy8aXJ6Y9+QbSgcjnZCTuPtKRyJJeAUU3O+//isFnnwy -->
+<!-- 1R8jhDuwkGfReaPtmNi8kgnF7my1yKGCFykwghclBgorBgEEAYI3AwMBMYIXFTCC -->
+<!-- FxEGCSqGSIb3DQEHAqCCFwIwghb+AgEDMQ8wDQYJYIZIAWUDBAIBBQAwggFZBgsq -->
+<!-- hkiG9w0BCRABBKCCAUgEggFEMIIBQAIBAQYKKwYBBAGEWQoDATAxMA0GCWCGSAFl -->
+<!-- AwQCAQUABCDDpSqCqiFMYOkO5fwMb0wPAQWnA2ZEjzuSwNJe2UGPRwIGZLgfrLm8 -->
+<!-- GBMyMDIzMDcyNjA5MjIyMC40NDhaMASAAgH0oIHYpIHVMIHSMQswCQYDVQQGEwJV -->
+<!-- UzETMBEGA1UECBMKV2FzaGluZ3RvbjEQMA4GA1UEBxMHUmVkbW9uZDEeMBwGA1UE -->
+<!-- ChMVTWljcm9zb2Z0IENvcnBvcmF0aW9uMS0wKwYDVQQLEyRNaWNyb3NvZnQgSXJl -->
+<!-- bGFuZCBPcGVyYXRpb25zIExpbWl0ZWQxJjAkBgNVBAsTHVRoYWxlcyBUU1MgRVNO -->
+<!-- Ojg2REYtNEJCQy05MzM1MSUwIwYDVQQDExxNaWNyb3NvZnQgVGltZS1TdGFtcCBT -->
+<!-- ZXJ2aWNloIIReDCCBycwggUPoAMCAQICEzMAAAG3IScaB6IqhkYAAQAAAbcwDQYJ -->
+<!-- KoZIhvcNAQELBQAwfDELMAkGA1UEBhMCVVMxEzARBgNVBAgTCldhc2hpbmd0b24x -->
+<!-- EDAOBgNVBAcTB1JlZG1vbmQxHjAcBgNVBAoTFU1pY3Jvc29mdCBDb3Jwb3JhdGlv -->
+<!-- bjEmMCQGA1UEAxMdTWljcm9zb2Z0IFRpbWUtU3RhbXAgUENBIDIwMTAwHhcNMjIw -->
+<!-- OTIwMjAyMjE0WhcNMjMxMjE0MjAyMjE0WjCB0jELMAkGA1UEBhMCVVMxEzARBgNV -->
+<!-- BAgTCldhc2hpbmd0b24xEDAOBgNVBAcTB1JlZG1vbmQxHjAcBgNVBAoTFU1pY3Jv -->
+<!-- c29mdCBDb3Jwb3JhdGlvbjEtMCsGA1UECxMkTWljcm9zb2Z0IElyZWxhbmQgT3Bl -->
+<!-- cmF0aW9ucyBMaW1pdGVkMSYwJAYDVQQLEx1UaGFsZXMgVFNTIEVTTjo4NkRGLTRC -->
+<!-- QkMtOTMzNTElMCMGA1UEAxMcTWljcm9zb2Z0IFRpbWUtU3RhbXAgU2VydmljZTCC -->
+<!-- AiIwDQYJKoZIhvcNAQEBBQADggIPADCCAgoCggIBAMf9z1dQNBNkTBq3HJclypjQ -->
+<!-- cJIlDAgpvsw4vHJe06n532RKGkcn0V7p65OeA1wOoO+8NsopnjPpVZ8+4s/RhdMC -->
+<!-- MNPQJXoWdkWOp/3puIEs1fzPBgTJrdmzdyUYzrAloICYx722gmdpbNf3P0y5Z2gR -->
+<!-- O48sWIYyYeNJYch+ZfJzXqqvuvq7G8Nm8IMQi8Zayvx+5dSGBM5VYHBxCEjXF9EN -->
+<!-- 6Qw7A60SaXjKjojSpUmpaM4FmVec985PNdSh8hOeP2tL781SBan92DT19tfNHv9H -->
+<!-- 0FAmE2HGRwizHkJ//mAZdS0s6bi/UwPMksAia5bpnIDBOoaYdWkV0lVG5rN0+ltR -->
+<!-- z9zjlaH9uhdGTJ+WiNKOr7mRnlzYQA53ftSSJBqsEpTzCv7c673fdvltx3y48Per -->
+<!-- 6vc6UR5e4kSZsH141IhxhmRR2SmEabuYKOTdO7Q/vlvAfQxuEnJ93NL4LYV1IWw8 -->
+<!-- O+xNO6gljrBpCOfOOTQgWJF+M6/IPyuYrcv79Lu7lc67S+U9MEu2dog0MuJIoYCM -->
+<!-- iuVaXS5+FmOJiyfiCZm0VJsJ570y9k/tEQe6aQR9MxDW1p2F3HWebolXj9su7zrr -->
+<!-- ElNlHAEvpFhcgoMniylNTiTZzLwUj7TH83gnugw1FCEVVh5U9lwNMPL1IGuz/3U+ -->
+<!-- RT9wZCBJYIrFJPd6k8UtAgMBAAGjggFJMIIBRTAdBgNVHQ4EFgQUs/I5Pgw0JAVh -->
+<!-- DdYB2yPII8l4tOwwHwYDVR0jBBgwFoAUn6cVXQBeYl2D9OXSZacbUzUZ6XIwXwYD -->
+<!-- VR0fBFgwVjBUoFKgUIZOaHR0cDovL3d3dy5taWNyb3NvZnQuY29tL3BraW9wcy9j -->
+<!-- cmwvTWljcm9zb2Z0JTIwVGltZS1TdGFtcCUyMFBDQSUyMDIwMTAoMSkuY3JsMGwG -->
+<!-- CCsGAQUFBwEBBGAwXjBcBggrBgEFBQcwAoZQaHR0cDovL3d3dy5taWNyb3NvZnQu -->
+<!-- Y29tL3BraW9wcy9jZXJ0cy9NaWNyb3NvZnQlMjBUaW1lLVN0YW1wJTIwUENBJTIw -->
+<!-- MjAxMCgxKS5jcnQwDAYDVR0TAQH/BAIwADAWBgNVHSUBAf8EDDAKBggrBgEFBQcD -->
+<!-- CDAOBgNVHQ8BAf8EBAMCB4AwDQYJKoZIhvcNAQELBQADggIBAA2dZMybhVxSXTbJ -->
+<!-- zFgvNiMCV5/Ayn5UuzJU495YDtcefold0ehR9QBGBhHmAMt10WYCHz2WQUyM3mQD -->
+<!-- 4IsHfEL1JEwgG9tGq71ucn9dknLBHD30JvbQRhIKcvFSnvRCCpVpilM8F/YaWXC9 -->
+<!-- VibSef/PU2GWA+1zs64VFxJqHeuy8KqrQyfF20SCnd8zRZl4YYBcjh9G0GjhJHUP -->
+<!-- AYEx0r8jSWjyi2o2WAHD6CppBtkwnZSf7A68DL4OwwBpmFB3+vubjgNwaICS+fkG -->
+<!-- VvRnP2ZgmlfnaAas8Mx7igJqciqq0Q6An+0rHj1kxisNdIiTzFlu5Gw2ehXpLrl5 -->
+<!-- 9kvsmONVAJHhndpx3n/0r76TH+3WNS9UT9jbxQkE+t2thif6MK5krFMnkBICCR/D -->
+<!-- VcV1qw9sg6sMEo0wWSXlQYXvcQWA65eVzSkosylhIlIZZLL3GHZD1LQtAjp2A5F7 -->
+<!-- C3Iw4Nt7C7aDCfpFxom3ZulRnFJollPHb3unj9hA9xvRiKnWMAMpS4MZAoiV4O29 -->
+<!-- zWKZdUzygp7gD4WjKK115KCJ0ovEcf92AnwMAXMnNs1o0LCszg+uDmiQZs5eR7jz -->
+<!-- dKzVfF1z7bfDYNPAJvm5pSQdby3wIOsN/stYjM+EkaPtUzr8OyMwrG+jpFMbsB4c -->
+<!-- fN6tvIeGtrtklMJFtnF68CcZZ5IAMIIHcTCCBVmgAwIBAgITMwAAABXF52ueAptJ -->
+<!-- mQAAAAAAFTANBgkqhkiG9w0BAQsFADCBiDELMAkGA1UEBhMCVVMxEzARBgNVBAgT -->
+<!-- Cldhc2hpbmd0b24xEDAOBgNVBAcTB1JlZG1vbmQxHjAcBgNVBAoTFU1pY3Jvc29m -->
+<!-- dCBDb3Jwb3JhdGlvbjEyMDAGA1UEAxMpTWljcm9zb2Z0IFJvb3QgQ2VydGlmaWNh -->
+<!-- dGUgQXV0aG9yaXR5IDIwMTAwHhcNMjEwOTMwMTgyMjI1WhcNMzAwOTMwMTgzMjI1 -->
+<!-- WjB8MQswCQYDVQQGEwJVUzETMBEGA1UECBMKV2FzaGluZ3RvbjEQMA4GA1UEBxMH -->
+<!-- UmVkbW9uZDEeMBwGA1UEChMVTWljcm9zb2Z0IENvcnBvcmF0aW9uMSYwJAYDVQQD -->
+<!-- Ex1NaWNyb3NvZnQgVGltZS1TdGFtcCBQQ0EgMjAxMDCCAiIwDQYJKoZIhvcNAQEB -->
+<!-- BQADggIPADCCAgoCggIBAOThpkzntHIhC3miy9ckeb0O1YLT/e6cBwfSqWxOdcjK -->
+<!-- NVf2AX9sSuDivbk+F2Az/1xPx2b3lVNxWuJ+Slr+uDZnhUYjDLWNE893MsAQGOhg -->
+<!-- fWpSg0S3po5GawcU88V29YZQ3MFEyHFcUTE3oAo4bo3t1w/YJlN8OWECesSq/XJp -->
+<!-- rx2rrPY2vjUmZNqYO7oaezOtgFt+jBAcnVL+tuhiJdxqD89d9P6OU8/W7IVWTe/d -->
+<!-- vI2k45GPsjksUZzpcGkNyjYtcI4xyDUoveO0hyTD4MmPfrVUj9z6BVWYbWg7mka9 -->
+<!-- 7aSueik3rMvrg0XnRm7KMtXAhjBcTyziYrLNueKNiOSWrAFKu75xqRdbZ2De+JKR -->
+<!-- Hh09/SDPc31BmkZ1zcRfNN0Sidb9pSB9fvzZnkXftnIv231fgLrbqn427DZM9itu -->
+<!-- qBJR6L8FA6PRc6ZNN3SUHDSCD/AQ8rdHGO2n6Jl8P0zbr17C89XYcz1DTsEzOUyO -->
+<!-- ArxCaC4Q6oRRRuLRvWoYWmEBc8pnol7XKHYC4jMYctenIPDC+hIK12NvDMk2ZItb -->
+<!-- oKaDIV1fMHSRlJTYuVD5C4lh8zYGNRiER9vcG9H9stQcxWv2XFJRXRLbJbqvUAV6 -->
+<!-- bMURHXLvjflSxIUXk8A8FdsaN8cIFRg/eKtFtvUeh17aj54WcmnGrnu3tz5q4i6t -->
+<!-- AgMBAAGjggHdMIIB2TASBgkrBgEEAYI3FQEEBQIDAQABMCMGCSsGAQQBgjcVAgQW -->
+<!-- BBQqp1L+ZMSavoKRPEY1Kc8Q/y8E7jAdBgNVHQ4EFgQUn6cVXQBeYl2D9OXSZacb -->
+<!-- UzUZ6XIwXAYDVR0gBFUwUzBRBgwrBgEEAYI3TIN9AQEwQTA/BggrBgEFBQcCARYz -->
+<!-- aHR0cDovL3d3dy5taWNyb3NvZnQuY29tL3BraW9wcy9Eb2NzL1JlcG9zaXRvcnku -->
+<!-- aHRtMBMGA1UdJQQMMAoGCCsGAQUFBwMIMBkGCSsGAQQBgjcUAgQMHgoAUwB1AGIA -->
+<!-- QwBBMAsGA1UdDwQEAwIBhjAPBgNVHRMBAf8EBTADAQH/MB8GA1UdIwQYMBaAFNX2 -->
+<!-- VsuP6KJcYmjRPZSQW9fOmhjEMFYGA1UdHwRPME0wS6BJoEeGRWh0dHA6Ly9jcmwu -->
+<!-- bWljcm9zb2Z0LmNvbS9wa2kvY3JsL3Byb2R1Y3RzL01pY1Jvb0NlckF1dF8yMDEw -->
+<!-- LTA2LTIzLmNybDBaBggrBgEFBQcBAQROMEwwSgYIKwYBBQUHMAKGPmh0dHA6Ly93 -->
+<!-- d3cubWljcm9zb2Z0LmNvbS9wa2kvY2VydHMvTWljUm9vQ2VyQXV0XzIwMTAtMDYt -->
+<!-- MjMuY3J0MA0GCSqGSIb3DQEBCwUAA4ICAQCdVX38Kq3hLB9nATEkW+Geckv8qW/q -->
+<!-- XBS2Pk5HZHixBpOXPTEztTnXwnE2P9pkbHzQdTltuw8x5MKP+2zRoZQYIu7pZmc6 -->
+<!-- U03dmLq2HnjYNi6cqYJWAAOwBb6J6Gngugnue99qb74py27YP0h1AdkY3m2CDPVt -->
+<!-- I1TkeFN1JFe53Z/zjj3G82jfZfakVqr3lbYoVSfQJL1AoL8ZthISEV09J+BAljis -->
+<!-- 9/kpicO8F7BUhUKz/AyeixmJ5/ALaoHCgRlCGVJ1ijbCHcNhcy4sa3tuPywJeBTp -->
+<!-- kbKpW99Jo3QMvOyRgNI95ko+ZjtPu4b6MhrZlvSP9pEB9s7GdP32THJvEKt1MMU0 -->
+<!-- sHrYUP4KWN1APMdUbZ1jdEgssU5HLcEUBHG/ZPkkvnNtyo4JvbMBV0lUZNlz138e -->
+<!-- W0QBjloZkWsNn6Qo3GcZKCS6OEuabvshVGtqRRFHqfG3rsjoiV5PndLQTHa1V1QJ -->
+<!-- sWkBRH58oWFsc/4Ku+xBZj1p/cvBQUl+fpO+y/g75LcVv7TOPqUxUYS8vwLBgqJ7 -->
+<!-- Fx0ViY1w/ue10CgaiQuPNtq6TPmb/wrpNPgkNWcr4A245oyZ1uEi6vAnQj0llOZ0 -->
+<!-- dFtq0Z4+7X6gMTN9vMvpe784cETRkPHIqzqKOghif9lwY1NNje6CbaUFEMFxBmoQ -->
+<!-- tB1VM1izoXBm8qGCAtQwggI9AgEBMIIBAKGB2KSB1TCB0jELMAkGA1UEBhMCVVMx -->
+<!-- EzARBgNVBAgTCldhc2hpbmd0b24xEDAOBgNVBAcTB1JlZG1vbmQxHjAcBgNVBAoT -->
+<!-- FU1pY3Jvc29mdCBDb3Jwb3JhdGlvbjEtMCsGA1UECxMkTWljcm9zb2Z0IElyZWxh -->
+<!-- bmQgT3BlcmF0aW9ucyBMaW1pdGVkMSYwJAYDVQQLEx1UaGFsZXMgVFNTIEVTTjo4 -->
+<!-- NkRGLTRCQkMtOTMzNTElMCMGA1UEAxMcTWljcm9zb2Z0IFRpbWUtU3RhbXAgU2Vy -->
+<!-- dmljZaIjCgEBMAcGBSsOAwIaAxUAyGdBGMObODlsGBZmSUX2oWgfqcaggYMwgYCk -->
+<!-- fjB8MQswCQYDVQQGEwJVUzETMBEGA1UECBMKV2FzaGluZ3RvbjEQMA4GA1UEBxMH -->
+<!-- UmVkbW9uZDEeMBwGA1UEChMVTWljcm9zb2Z0IENvcnBvcmF0aW9uMSYwJAYDVQQD -->
+<!-- Ex1NaWNyb3NvZnQgVGltZS1TdGFtcCBQQ0EgMjAxMDANBgkqhkiG9w0BAQUFAAIF -->
+<!-- AOhrLzwwIhgPMjAyMzA3MjYxMzM1NTZaGA8yMDIzMDcyNzEzMzU1NlowdDA6Bgor -->
+<!-- BgEEAYRZCgQBMSwwKjAKAgUA6GsvPAIBADAHAgEAAgIA0DAHAgEAAgIRzjAKAgUA -->
+<!-- 6GyAvAIBADA2BgorBgEEAYRZCgQCMSgwJjAMBgorBgEEAYRZCgMCoAowCAIBAAID -->
+<!-- B6EgoQowCAIBAAIDAYagMA0GCSqGSIb3DQEBBQUAA4GBAIOhqiXgcaJ2iGzPcWz+ -->
+<!-- EmkR4Z9hs5V8WPFpZ+jPLZIN3QNRM9rH60OZdKIMDc74yNmEY5Srup41/byiUEHF -->
+<!-- IAzLzfMQu80oieCvZiQa2jtBlIZ8wIJ1UxNSjOcYqHH1gkEhqe0A/FD7qrgysquK -->
+<!-- zrqvHfHbl+Wi8PV4BoFfWKJWMYIEDTCCBAkCAQEwgZMwfDELMAkGA1UEBhMCVVMx -->
+<!-- EzARBgNVBAgTCldhc2hpbmd0b24xEDAOBgNVBAcTB1JlZG1vbmQxHjAcBgNVBAoT -->
+<!-- FU1pY3Jvc29mdCBDb3Jwb3JhdGlvbjEmMCQGA1UEAxMdTWljcm9zb2Z0IFRpbWUt -->
+<!-- U3RhbXAgUENBIDIwMTACEzMAAAG3IScaB6IqhkYAAQAAAbcwDQYJYIZIAWUDBAIB -->
+<!-- BQCgggFKMBoGCSqGSIb3DQEJAzENBgsqhkiG9w0BCRABBDAvBgkqhkiG9w0BCQQx -->
+<!-- IgQgwQDytY5NktAVBO2YGw+ASDQb2L/ntDxvg+OG0EbVOy4wgfoGCyqGSIb3DQEJ -->
+<!-- EAIvMYHqMIHnMIHkMIG9BCBsJ3jTsh7aL8hNeiYGL5/8IBn8zUfr7/Q7rkM8ic1w -->
+<!-- QTCBmDCBgKR+MHwxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpXYXNoaW5ndG9uMRAw -->
+<!-- DgYDVQQHEwdSZWRtb25kMR4wHAYDVQQKExVNaWNyb3NvZnQgQ29ycG9yYXRpb24x -->
+<!-- JjAkBgNVBAMTHU1pY3Jvc29mdCBUaW1lLVN0YW1wIFBDQSAyMDEwAhMzAAABtyEn -->
+<!-- GgeiKoZGAAEAAAG3MCIEIHSaMOpfqvinHOWDwCe1wv6qg3ouJ8Zrz4HT25l7Ih5J -->
+<!-- MA0GCSqGSIb3DQEBCwUABIICAKwDRnQt3db+LddxBH/iy2YA9IYSn2M+OOMV7Qf8 -->
+<!-- /6SFEJAkElCj2RnPNatEb/GTiP7VUFf+e3tMr89WuZZWKAD/0YOGRS1ElOefnSQX -->
+<!-- 03uNpu+fVmUptno10bhgZfeGDHhn9By/UGloCu0d61lJUnkzsVEZi8zOv/jAtMlo -->
+<!-- d77p8FpebXazSA2oLO21/h9Lwk4gnH386nNKUycmI2VeRgw1C4mySAqYW6sLffI0 -->
+<!-- gWUYp5G3HNdrhycjzVVyC4d2feH35+GawoB4qFZdiOrArWNsb6ORWh+UFJ+F9+Y6 -->
+<!-- q29CdHQo9Jf5xmf1OKAlbQ5mdqdNzdh5KgaPQa+Qz11kSfGe+XZgTiEtPcVdQc9w -->
+<!-- rJu/wydM2tKF6VFBpA+69jyOpjhKdFg9UGdeeFK/C1a41xKjF+7oPxZeVdg2Od+v -->
+<!-- RyOD8vo0jH3WlwLfPdjUwoofr4hZj/29z7DyxIFj2rAo3bMOHltAUZ59npaPOIRW -->
+<!-- JkapCI/mvbQ3YPP/dqbr5Ud3fSqOi9K9eWg7D7dh/62ZELWPqz9LeaKOs5n1xeTE -->
+<!-- cg0ZxOh4TXOsuV//8xg7z4XIJ/uR86jgOmBKsCjUZJ1YUEwV8N/652LIKsj/BQPL -->
+<!-- wWBOi2ti9k7fxwgrqF/EtfUEZu06fB/VLKAT1SEZOfS+pHUflGf1UoqIQ1jXvVIF -->
+<!-- b6oC -->
+<!-- SIG # End signature block -->

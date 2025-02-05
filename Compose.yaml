@@ -1,0 +1,47 @@
+version: "3.8"
+networks:
+  psrunner_bridge:
+    name: psrunner_bridge
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.72.0.0/16
+services:
+  azurite:
+    image: mcr.microsoft.com/azure-storage/azurite
+    container_name: "azurite"
+    hostname: azurite
+    command: azurite -l /data --blobHost 0.0.0.0 --queueHost 0.0.0.0 --tableHost 0.0.0.0 -d /data/debug.log
+    environment:
+      - AZURITE_ACCOUNTS=psrunner:Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw==
+    volumes:
+      - C:\azurite:/data
+    ports:
+      - 10000:10000
+      - 10001:10001
+      - 10002:10002
+    networks:
+      psrunner_bridge:
+        ipv4_address: 172.72.0.20
+    restart: unless-stopped
+
+  psrunner:
+    image: psrunner:latest
+    container_name: psrunner
+    environment:
+      - AzureWebJobsStorage=DefaultEndpointsProtocol=http;AccountName=psrunner;AccountKey=Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw==;BlobEndpoint=http://172.72.0.20:10000/psrunner;QueueEndpoint=http://172.72.0.20:10001/psrunner;TableEndpoint=http://172.72.0.20:10002/psrunner
+      - WEBSITE_CONTENTAZUREFILECONNECTIONSTRING=DefaultEndpointsProtocol=http;AccountName=psrunner;AccountKey=Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw==;BlobEndpoint=http://172.72.0.20:10000/psrunner;QueueEndpoint=http://172.72.0.20:10001/psrunner;TableEndpoint=http://172.72.0.20:10002/psrunner
+      - AzureWebJobsDashboard=DefaultEndpointsProtocol=http;AccountName=psrunner;AccountKey=Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw==;BlobEndpoint=http://172.72.0.20:10000/psrunner;QueueEndpoint=http://172.72.0.20:10001/psrunner;TableEndpoint=http://172.72.0.20:10002/psrunner
+      - CONNECTION_STRING=DefaultEndpointsProtocol=http;AccountName=psrunner;AccountKey=Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw==;BlobEndpoint=http://172.72.0.20:10000/psrunner;QueueEndpoint=http://172.72.0.20:10001/psrunner;TableEndpoint=http://172.72.0.20:10002/psrunner
+      - WEBSITE_HOSTNAME=localhost:80
+      - LOG_PSRUNNER_INVOCATIONS=true
+      - STORAGE_TYPE=Azurite
+    ports:
+      - 7071:80/tcp # HTTP proxy
+      - 2222:2222
+    networks:
+      psrunner_bridge:
+        ipv4_address: 172.72.0.10
+    depends_on:
+      - azurite
+    restart: unless-stopped
