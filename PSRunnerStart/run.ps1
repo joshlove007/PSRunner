@@ -4,14 +4,12 @@ Import-Module -Name PSRunnerFunctions
 
 #Region Update Invocation Table - Create New Row 
     if($env:LOG_PSRUNNER_INVOCATIONS -eq 'True'){
-        $RequestMasked = Convert-MaskSensitiveData -InputObject $Request
-        $TriggerMetadataMasked = Convert-MaskSensitiveData -InputObject $TriggerMetadata
         $TableRowColumns = @{
             StartedTime  = Get-Date -Format "yyyy-MM-ddTHH:mm:ss.fffffffZ" -AsUTC
-            Input        = @{Request=$RequestMasked;TriggerMetadata=$TriggerMetadataMasked} | ConvertTo-Json -Depth 4 -Compress
-            Script       = $RequestMasked.Body||%{$_?.Substring(0, [Math]::Min($_?.Length, 32000))}
-            Params       = $($RequestMasked.Headers.Parameters ?? $RequestMasked.Headers.Params)||%{$_?.Substring(0, [Math]::Min($_?.Length, 32000))}
-            Headers      = $RequestMasked.Headers|ConvertTo-Json -Depth 4 -EA Continue||%{$_.Substring(0, [Math]::Min($_.Length, 32000))}
+            Input        = @{Request=$Request;TriggerMetadata=$TriggerMetadata} | ConvertTo-Json -Depth 4 -Compress
+            Script       = $Request.Body||%{$_?.Substring(0, [Math]::Min($_?.Length, 32000))}
+            Params       = $($Request.Headers.Parameters ?? $Request.Headers.Params)||%{$_?.Substring(0, [Math]::Min($_?.Length, 32000))}
+            Headers      = $Request.Headers|ConvertTo-Json -Depth 4 -EA Continue||%{$_.Substring(0, [Math]::Min($_.Length, 32000))}
             InvocationId = $TriggerMetadata.InvocationId
             Status       = 'Started'
             LastUpdated  = Get-Date -Format "yyyy-MM-ddTHH:mm:ss.fffffffZ" -AsUTC

@@ -398,19 +398,6 @@ using namespace System.Net
     }
 #EndRegion
 
-#Region Clone Request
-    function Get-ClonedObject {
-        [CmdletBinding()]
-        param(
-            [Parameter(Mandatory=$True)]
-            $InputObject
-        )
-
-        $NewObject = $InputObject | ConvertTo-Json | ConvertFrom-Json
-        $NewObject
-    }
-#EndRegion
-
 #Region Function Invoke-PSRunner
     function Invoke-PSRunner {
         [CmdletBinding()]

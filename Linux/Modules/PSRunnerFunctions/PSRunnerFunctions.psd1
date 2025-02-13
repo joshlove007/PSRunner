@@ -21,8 +21,7 @@
         "Get-AzStAcctBlob",
         "Invoke-AzStAcctBlobService",
         'ConvertFrom-ConnectionString',
-        'New-Error',
-        'Convert-MaskSensitiveData'
+        'New-Error'
     )
     PowerShellVersion = '7.2'
 }
