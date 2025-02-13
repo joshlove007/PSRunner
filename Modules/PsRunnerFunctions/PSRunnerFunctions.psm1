@@ -1487,7 +1487,7 @@ using namespace System.Net
             
             [Parameter()]
             [ValidateSet('Azure','Azurite')]
-            [Alias('Location','StorageAccountLocation','StorageAccountType','Type')]
+            [Alias('Location','StorageAccountLocation','StorageAccountType','Type','StAcctType')]
             [string]
             $StAcctLocation = $env:STORAGE_TYPE ?? 'Azurite',
 
@@ -1644,12 +1644,13 @@ using namespace System.Net
             [Parameter(
                 HelpMessage="Include the Storage Account Name. Default for local is http://127.0.0.1:10000/devstoreaccount1."
             )]
+            [Alias('BlobEndpoint','Endpoint')]
             [string]
             $BaseURL = (Convert-ConStr $ConString).BlobEndpoint ?? "http://127.0.0.1:10000/$AccountName",
             
             [Parameter()]
             [ValidateSet('Azure','Azurite')]
-            [Alias('Location','StorageAccountLocation','StorageAccountType','Type')]
+            [Alias('Location','StorageAccountLocation','StorageAccountType','Type','StAcctType')]
             [string]
             $StAcctLocation = $env:STORAGE_TYPE ?? 'Azurite',
 
@@ -1665,6 +1666,7 @@ using namespace System.Net
             $File,
 
             [Parameter()]
+            [Alias('BlobContent','Blob')]
             $Content,
 
             [Parameter()]
@@ -1717,10 +1719,10 @@ using namespace System.Net
             $ContentType = if(!$ContentType){'application/octet-stream'}else{$ContentType}
             "/$ContainerName/$BlobName"
             $Method = 'PUT'
-            $Body = if($ContentType -eq 'application/octet-stream' -and $Content -is [string]){
-                [System.Text.Encoding]::UTF8.GetBytes($Content)
+            if($ContentType -eq 'application/octet-stream' -and $Content -is [string]){
+                $Body = [byte[]][System.Text.Encoding]::UTF8.GetBytes($Content)
             }else{
-                $Content
+                $Body = $Content
             }
             $BlobType = if(!$BlobType){'BlockBlob'}else{$BlobType}
         }
@@ -1903,7 +1905,7 @@ using namespace System.Net
             $InvocationParams.StatusCodeVariable      = 'StatusCode'
             $InvocationParams.ResponseHeadersVariable = 'ResponseHeaders'
             # Invoke the method
-            $response = Invoke-RestMethod @InvocationParams 
+            $response = Invoke-RestMethod @InvocationParams
         }else {
             $response = Invoke-WebRequest @InvocationParams
             $StatusCode      = $response.StatusCode

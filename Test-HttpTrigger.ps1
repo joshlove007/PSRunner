@@ -152,7 +152,7 @@
     #EndRegion
 #EndRegion
 
-$ApiSecret         = Get-Cred 'PsRAPISecret' -SecretOnly
+#$ApiSecret         = Get-Cred 'PsRAPISecret' -SecretOnly
 
 $tenantId = ""
 $subscriptionId = ""
@@ -160,26 +160,24 @@ $Region   = "US"
 
 $APIClientId = ''
 
-$PSRunnerToken = Get-MSToken -APIClientId $APIClientId -APIClientSecret $ApiSecret -TenantId $tenantId -APIScope :"api://$APIClientId/.default"
+#$PSRunnerToken = Get-MSToken -APIClientId $APIClientId -APIClientSecret $ApiSecret -TenantId $tenantId -APIScope :"api://$APIClientId/.default"
 
 $C = {
     Write-Host "PSRunner Test"
-    $Users = Get-AzADUser
-    $Users | Where-Object{$_.GivenName -eq $Name}
+    Write-Output @{Result = "Apple Bottom Jeans"}
 }
 
 $Headers = @{
-    Authorization    = "Bearer $PSRunnerToken"
-    Async            = $true
-    RunAsDurableTask = $false
+    #Authorization    = "Bearer $PSRunnerToken"
+    Async            = $false
+    RunAsDurableTask = $true
     Parameters      = @{Name = "Josh"} | ConvertTo-Json -Compress
     'content-type'  = "text/powershell"
 }
 
 $Start = Get-Date
 
-
-$Response = Invoke-RestMethod -Method POST "http://localhost:7071/api/PSRunner" -Body $C -Headers $Headers 
+$Response = Invoke-RestMethod -Method POST "http://localhost:7071/api/PSRunner?code=AxFZ8ImABWVEgsr9NhCNJxVCSIdCqWA6wzSLYWLhZJJlAzFuKTOP7z==" -Body $C -Headers $Headers 
 
 $TimeToRun = New-TimeSpan -Start $Start -End (Get-Date)
 
@@ -188,6 +186,5 @@ Write-Host 'Response.error' $Response.Error
 $Response.HostOutput
 Write-Host 'Response.id' $Response.id
 Write-Host 'Response status query URL: ' $Response.statusQueryGetUri
-
 
 Write-Host "RoundTrip Time: $TimeToRun"

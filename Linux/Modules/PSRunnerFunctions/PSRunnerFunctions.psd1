@@ -8,21 +8,21 @@
     FunctionsToExport = @(
         'ConvertFrom-JWTtoken',
         'Confirm-Parameters', 
-        'Get-CachedSecret',
         'Get-Cred',
         'Get-CredList',
-        'Get-PartnerMsToken',
         'Invoke-PSRunner',       
-        'Invoke-VertexAuthProxy',
         'New-Cred',
         'Remove-Cred',
-        'Set-SecretCache',
         'Invoke-AzStAcctTableService',
         'Remove-AzStAcctTable',
         'Set-AzStAcctTable',
         'Get-AzStAcctTable',
+        'Set-AzStAcctBlob',
+        "Get-AzStAcctBlob",
+        "Invoke-AzStAcctBlobService",
         'ConvertFrom-ConnectionString',
-        'New-Error'
+        'New-Error',
+        'Convert-MaskSensitiveData'
     )
     PowerShellVersion = '7.2'
 }
